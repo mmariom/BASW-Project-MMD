@@ -215,7 +215,7 @@ body {
   width: 200vw;
   height: 200vw;
   color: #fefefe;
-  background-image: url(../img/menu-background.png);
+  background-image: url(../img/menu-backgroundblur.png);
   background-size: cover;
   border-radius: 50%;
   -webkit-transition: all 0.4s ease;
@@ -622,7 +622,7 @@ h1 {
 }
 
 .body3article .itemarticle2box-1 {
-  background-image: url(../img/jeronimo-martins-nudibranch.jpg);
+  background-image: url(../img/Vents-on-the-Juan-de-Fuca-ridge.jpg);
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
