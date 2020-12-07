@@ -6,7 +6,7 @@ body {
 
 /*HEADER STARTS*/
 .header {
-  background-color: #0C0454;
+  background-color: #161B33;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,7 +156,7 @@ body {
           flex: none;
   width: 100%;
   height: 2px;
-  background: #F2AE38;
+  background: #F1DAC4;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   display: -webkit-box;
@@ -285,7 +285,7 @@ body {
 }
 
 .header .menumain .outer-menu .menu > div > div > ul > li > a:hover {
-  color: #F2AE38;
+  color: #F1DAC4;
 }
 
 .header .menumain .outer-menu .menu > div > div > ul > li > a:hover:after {
@@ -300,7 +300,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #F2AE38;
+  background: #F1DAC4;
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
@@ -339,7 +339,7 @@ body {
 /*HEADER ENDS*/
 /*BODY1 Begins*/
 .body1 {
-  background-color: #29104D;
+  background-color: #0D0C1D;
   width: 100%;
   height: 568px;
   display: -webkit-box;
@@ -355,7 +355,7 @@ body {
 }
 
 .body1 .body1text1 {
-  color: #F4CE3D;
+  color: #F1DAC4;
   font-size: 23px;
   text-align: center;
   padding-left: 30px;
@@ -364,7 +364,7 @@ body {
 }
 
 .body1 .body1text2 {
-  color: #F4CE3D;
+  color: #F1DAC4;
   font-size: 23px;
   text-align: center;
   padding-left: 30px;
@@ -375,8 +375,8 @@ body {
 /*BODY1 End*/
 /*BODY2 Begins*/
 .body2 {
-  background-color: #0C0454;
-  color: #F4CE3D;
+  background-color: #161B33;
+  color: #F1DAC4;
   height: 100%;
   font-size: 2rem;
   display: -webkit-box;
@@ -406,8 +406,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: black;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, black), color-stop(60%, #0c0454), color-stop(85%, #0c0454));
-  background: linear-gradient(0deg, black 16%, #0c0454 60%, #0c0454 85%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(16%, #0d0c1d), color-stop(85%, #161b33));
+  background: linear-gradient(0deg, #0d0c1d 16%, #161b33 85%);
   /*box highlights
     #imtb{
         border-top: 3px double $yellowtext;
@@ -429,7 +429,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background-color: #0C0454;
+  background-color: #161B33;
   height: 40px;
   color: white;
   -webkit-box-pack: center;
@@ -440,7 +440,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 2px solid #F4CE3D;
+  border-top: 2px solid #F1DAC4;
 }
 
 footer #fotspan {
@@ -451,13 +451,13 @@ footer #fotspan {
 
 /*BODY 3 end*/
 .spiecename {
-  color: #F4CE3D;
+  color: #F1DAC4;
   margin-bottom: 35px;
   font-size: 1.4em;
 }
 
 .spiecenamewithspace {
-  color: #F4CE3D;
+  color: #F1DAC4;
   margin-top: 150px;
   margin-bottom: 35px;
   font-size: 1.4em;
@@ -482,14 +482,14 @@ footer #fotspan {
 }
 
 .body1article .seafloortext {
-  color: #F4CE3D;
+  color: #F1DAC4;
   text-align: center;
   font-size: 39px;
   font-weight: 800;
 }
 
 .body2article {
-  background-color: #110C3C;
+  background-color: #0D0C1D;
   color: white;
   height: 100%;
   font-size: 18px;
@@ -521,7 +521,7 @@ footer #fotspan {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #110C3C;
+  background-color: #0D0C1D;
 }
 
 .body3article .itemarticle {
