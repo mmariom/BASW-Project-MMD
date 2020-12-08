@@ -1,8 +1,8 @@
-$maincolor  : #0C0454;
-$secondcolor : #29104D;
-$yellowtext : #F4CE3D;
-$hamburgercolor : #F2AE38;
-$articlebackground : #110C3C;
+$maincolor  : #161B33;
+$secondcolor : #0D0C1D;
+$yellowtext : #F1DAC4;
+$hamburgercolor : #F1DAC4;
+$articlebackground : #0D0C1D;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
@@ -181,7 +181,7 @@ body{
             width: 200vw;
             height: 200vw;
             color: #fefefe;
-            background-image: url(../img/menu-background.png);
+            background-image: url(../img/menu-backgroundblur.png);
             background-size: cover;
 
 
@@ -298,7 +298,7 @@ body{
     justify-content: center;
     background-image: url(../img/seafloor.jpg);
     background-size: cover;
-    background-position: 20% 90%;
+    background-position: 10% 60%;
 
         .seafloortext{
             color: $yellowtext;
@@ -466,4 +466,175 @@ h1{
           font-weight: 800;
           
       }
+}
+
+.body1zones{
+
+  width: 100%;
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../img/NatGeoDeepSeaExplore.jpg);
+  background-size: cover;;
+  background-position: 80% 90%;
+
+      .zonestext{
+          color: $yellowtext;
+          text-align: center;
+          font-size: 39px;
+          font-weight: 800;
+          
+      }
+}
+
+.body2prespeach{
+
+  background-color: $articlebackground;
+  color: white;
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+      .prespeach{
+        margin: 20px;
+
+          text-align: center;
+      }
+  
+
+
+      
+}
+
+.body3article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $articlebackground;
+
+  .articletext1{
+  padding-left: 31px;
+  padding-right: 31px;
+  }
+
+
+  .itemarticle {
+
+      width: 100%;
+      height: 175px;
+      background-size: cover;
+      margin-bottom: 20px;
+
+   
+  }
+
+  .itemarticle2{
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    margin-bottom: 20px;
+      
+  }
+
+
+
+  .itemarticle3{
+    width: 100%;
+    height: 260px;
+    background-size: cover;
+    margin-top: 30px;
+  }
+
+  .itemarticle4{
+    width: 100%;
+    height: 319px;
+    background-size: cover;
+
+  }
+
+.itemarticlebox-1{
+
+  
+  background-image: url(../img/image32.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.itemarticle2box-1{
+
+  
+  background-image: url(../img/Vents-on-the-Juan-de-Fuca-ridge.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.itemarticle3box-1{
+  background-image: url(../img/jeronimo-martins-nudibranch.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.itemarticle4box-1{
+  background-image: url(../img/tmpnull.gif);
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+}
+
+.txtwhite{
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+h1{
+
+  color: $yellowtext;
+  text-align: center;
+}
+
+.video1{
+
+  margin-top: 25px;
+  margin-bottom: 60px;
+  width: 80%;
+  height: 244px;
+}
+
+
+
+.video2{
+
+margin-top: 25px;
+margin-bottom: 60px;
+width: 100%;
+height: 260px;
 }

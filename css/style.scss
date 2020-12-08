@@ -1,8 +1,8 @@
-$maincolor  : #0C0454;
-$secondcolor : #29104D;
-$yellowtext : #F4CE3D;
-$hamburgercolor : #F2AE38;
-$articlebackground : #110C3C;
+$maincolor  : #161B33;
+$secondcolor : #0D0C1D;
+$yellowtext : #F1DAC4;
+$hamburgercolor : #F1DAC4;
+$articlebackground : #0D0C1D;
 $desktopbackgroundcolor : #0D0C1D;
 $desktopmaincolor: #161B33;
 $dekstoptextcolor :#F1DAC4;
@@ -183,7 +183,7 @@ body{
             width: 200vw;
             height: 200vw;
             color: #fefefe;
-            background-image: url(../img/menu-background.png);
+            background-image: url(../img/menu-backgroundblur.png);
             background-size: cover;
 
 
@@ -347,7 +347,7 @@ body{
     flex-direction: column;
     align-items: center;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 16%, rgba(12,4,84,1) 60%, rgba(12,4,84,1) 85%);
+    background: linear-gradient(0deg, rgba(13, 12, 29,1) 16%,rgba(22, 27, 51,1) 85%);
     .item {
 
         width: 100%;
@@ -706,6 +706,23 @@ footer{
 
 }
 
+.menuhover:hover{
+  
+  -webkit-mask-image: linear-gradient(-75deg, rgba(105, 23, 23, 0.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 2.5s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
 
 /*Galery animation FIRST*/
 div.snip1104 {
@@ -833,9 +850,8 @@ div.snip1106 {
   position: relative;
   overflow: hidden;
   background: #000000;
-  color: $dekstoptextcolor;
+  color: #DCF763;
   text-align: center;
-  box-shadow: 0 0 5px rgba(140, 15, 15, 0.983);
   flex: 1;
 }
 
@@ -950,9 +966,8 @@ div.snip1107 {
   position: relative;
   overflow: hidden;
   background: #000000;
-  color: $dekstoptextcolor;
+  color: #DCF763;
   text-align: center;
-  box-shadow: 0 0 5px rgba(140, 15, 15, 0.983);
   flex: 1;
 }
 
@@ -1076,9 +1091,8 @@ div.snip1108 {
   position: relative;
   overflow: hidden;
   background: #000000;
-  color: $dekstoptextcolor;
+  color: #DCF763;
   text-align: center;
-  box-shadow: 0 0 5px rgba(140, 15, 15, 0.983);
   flex: 1;
 }
 
@@ -1194,9 +1208,8 @@ div.snip1109 {
   position: relative;
   overflow: hidden;
   background: #000000;
-  color: $dekstoptextcolor;
+  color: #DCF763;
   text-align: center;
-  box-shadow: 0 0 5px rgba(140, 15, 15, 0.983);
   flex: 1;
 }
 
