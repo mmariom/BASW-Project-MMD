@@ -511,18 +511,20 @@ li{
 
 .headerdesktop{
   display: flex;
-  justify-content: space-between;
   background-color: $desktopbackgroundcolor;
-  padding-bottom: 30px;
-  padding-top: 30px ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 
 
 
   .logodekstop{
-    margin-left:  5%;
-    width: 30px;
-    height: 30px;
-    background-image: url(../img/logo.png);
+   
+    width: 140px;
+    height: 60px;
+    flex-grow: 1;
+    text-align: center;
+    
     
     
     
@@ -531,11 +533,21 @@ li{
   .menudekstop{
     display: flex;
     flex: row;
-    margin-right: 5%;
+    margin-left: 5%;
+    align-self: center;
+
   
   
     
    
+  }
+
+  .menudekstop2{
+    display: flex;
+    flex: row;
+    align-self: center;
+    margin-right: 5%;
+  
   }
 
 
@@ -550,6 +562,34 @@ li{
 
   background-image: url(../img/homepageimg11.jpg);
   height: 680px;
+  display: flex;
+  flex-direction: row;
+
+    .body1text1{
+
+      color: $yellowtext;
+      font-size: 23px;
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      left: 240px;
+      top: 250px;
+      
+
+  }
+
+  .body1text2{
+
+    color: $yellowtext;
+    font-size: 27px;
+    height: 250px;
+    width: 270px;
+    position: absolute;
+    right: 240px;
+    top: 250px;
+    
+
+}
 }
 
 .body2{
@@ -712,6 +752,9 @@ footer{
   -webkit-mask-size: 200%;
   animation: shine 2.5s infinite;
 }
+
+
+
 
 @-webkit-keyframes shine {
   from {

@@ -557,18 +557,17 @@ footer #fotspan {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     background-color: #0D0C1D;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .headerdesktop .logodekstop {
-    margin-left: 5%;
-    width: 30px;
-    height: 30px;
-    background-image: url(../img/logo.png);
+    width: 140px;
+    height: 60px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: center;
   }
   .headerdesktop .menudekstop {
     display: -webkit-box;
@@ -577,11 +576,49 @@ footer #fotspan {
     -webkit-box-flex: row;
         -ms-flex: row;
             flex: row;
+    margin-left: 5%;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .headerdesktop .menudekstop2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: row;
+        -ms-flex: row;
+            flex: row;
+    -ms-flex-item-align: center;
+        align-self: center;
     margin-right: 5%;
   }
   .body1 {
     background-image: url(../img/homepageimg11.jpg);
     height: 680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .body1 .body1text1 {
+    color: #F1DAC4;
+    font-size: 23px;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 240px;
+    top: 250px;
+  }
+  .body1 .body1text2 {
+    color: #F1DAC4;
+    font-size: 27px;
+    height: 250px;
+    width: 270px;
+    position: absolute;
+    right: 240px;
+    top: 250px;
   }
   .body2 {
     background-color: #161B33;

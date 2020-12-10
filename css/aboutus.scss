@@ -3,7 +3,9 @@ $secondcolor : #0D0C1D;
 $yellowtext : #F1DAC4;
 $hamburgercolor : #F1DAC4;
 $articlebackground : #0D0C1D;
-
+$desktopbackgroundcolor : #0D0C1D;
+$desktopmaincolor: #161B33;
+$dekstoptextcolor :#F1DAC4;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
@@ -638,6 +640,10 @@ h1{
   margin: 0;
 }
 
+.headerdesktop,.aboutustitledesktop ,.bodydesktop{
+    display: none;
+}
+
 
 .video2{
 
@@ -646,3 +652,323 @@ margin-bottom: 60px;
 width: 100%;
 height: 260px;
 }
+
+
+
+
+
+@media (min-width:  769px) {
+
+  .header , footer ,.body3article{
+    display: none;
+  }
+
+  a {
+    color:$dekstoptextcolor;
+    text-decoration: none; 
+
+
+  }
+
+  .menuhover:hover{
+  
+    -webkit-mask-image: linear-gradient(-75deg, rgba(105, 23, 23, 0.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2.5s infinite;
+  }
+
+
+  li{
+
+
+    list-style-type: none;
+    margin-left: 30px;
+  }
+
+
+  .headerdesktop{
+    display: flex;
+    background-color: $desktopbackgroundcolor;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  .logodekstop{
+    
+    width: 140px;
+    height: 60px;
+    flex-grow: 1;
+    text-align: center;
+    
+    
+    
+    
+  }
+
+  .menudekstop{
+    display: flex;
+    flex: row;
+    margin-left: 5%;
+    align-self: center;
+
+
+
+    
+  
+  }
+
+  .menudekstop2{
+    display: flex;
+    flex: row;
+    align-self: center;
+    margin-right: 5%;
+
+  }
+
+  
+
+  .aboutustitledesktop{
+    display: flex;
+    background-color: $desktopbackgroundcolor;
+    padding-top: 85px;
+    padding-bottom: 50px;
+  }
+
+
+
+  .bodydesktop{
+    background-color: $desktopbackgroundcolor;
+    display: flex;
+    flex-direction: column;
+    padding-left: 92px;
+    padding-right: 92px;
+   
+
+
+
+      .bodydesktopsection1 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 205px;
+        
+      }
+
+      .bodydesktopsection1text{
+       flex: 1;
+        width: 22%;
+        height: 22%;
+        margin-top: 50px;
+       
+      
+
+          h1{
+            font-size: 3em;
+            text-align: left;
+          }
+
+
+      }
+
+     .spacer{
+       width: 30vh;
+       height: 393px;
+   
+     }
+
+      .bodydesktopsection1img{
+
+        flex: 1;
+        width: 694px;
+        height: 393px;
+
+       
+
+      }
+      
+
+
+
+
+      .image11{
+        width: 100%;
+        height: 100%;
+      }
+
+
+
+            .bodydesktopsection2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 205px;
+        
+      }
+
+      .bodydesktopsection2text{
+       flex: 1;
+        width: 22%;
+        height: 22%;
+        margin-top: 50px;
+       
+      
+
+          h1{
+            font-size: 3em;
+            text-align: left;
+          }
+
+
+      }
+
+     .spacer2{
+       width: 30vh;
+       height: 393px;
+     }
+
+      .bodydesktopsection2img{
+
+        flex: 1;
+        width: 694px;
+        height: 393px;
+
+       
+
+      }
+      
+
+
+
+
+      .image22{
+        width: 100%;
+        height: 100%;
+      }
+      
+       
+       
+       
+      
+
+      .bodydesktopsection3 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 205px;
+        
+      }
+
+      .bodydesktopsection3text{
+       flex: 1;
+        width: 22%;
+        height: 22%;
+        margin-top: 50px;
+       
+      
+
+          h1{
+            font-size: 3em;
+            text-align: left;
+          }
+
+
+      }
+
+     .spacer3{
+       width: 30vh;
+       height: 393px;
+     }
+
+      .bodydesktopsection3img{
+
+        flex: 1;
+        width: 694px;
+        height: 393px;
+
+       
+
+      }
+      
+
+
+
+
+      .image33{
+        width: 100%;
+        height: 100%;
+      }
+
+
+      
+      .bodydesktopsection4 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 205px;
+        
+      }
+  
+      .bodydesktopsection4text{
+       flex: 1;
+        width: 22%;
+        height: 22%;
+        margin-top: 50px;
+       
+      
+  
+          h1{
+            font-size: 3em;
+            text-align: left;
+          }
+  
+  
+      }
+  
+     .spacer4{
+       width: 30vh;
+       height: 393px;
+     }
+  
+      .bodydesktopsection4img{
+  
+        flex: 1;
+        width: 694px;
+        height: 393px;
+  
+       
+  
+      }
+      
+  
+  
+  
+  
+      .image44{
+        width: 100%;
+        height: 100%;
+      }
+  
+  
+
+
+    }
+
+    .footoerdesktop{
+      display: flex;
+      justify-content: space-between;
+      border-line: 3px palegoldenrod;
+      border-top: 5px solid $dekstoptextcolor;
+    }
+
+    
+
+
+ 
+    .socioltext{
+      color: $dekstoptextcolor;
+    }
+
+   
+    
+
+  }
+
+
+
