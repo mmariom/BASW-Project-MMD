@@ -3,6 +3,9 @@ $secondcolor : #0D0C1D;
 $yellowtext : #F1DAC4;
 $hamburgercolor : #F1DAC4;
 $articlebackground : #0D0C1D;
+$desktopbackgroundcolor : #0D0C1D;
+$desktopmaincolor: #161B33;
+$dekstoptextcolor :#F1DAC4;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
@@ -304,7 +307,8 @@ body{
             color: $yellowtext;
             text-align: center;
             font-size: 39px;
-            font-weight: 800;
+            font-weight: 900;
+            font-style: oblique;
             
         }
 }
@@ -646,3 +650,185 @@ margin-bottom: 60px;
 width: 100%;
 height: 260px;
 }
+
+/*DESKTOP CODE*/
+
+.headerdesktop{
+  display: none;
+}
+
+.subtextsuste{
+  display: none;
+}
+
+
+/*DESKTOP CODE*/
+
+
+@media (min-width:  769px) {
+
+.header,.body3article, footer {
+  display: none;
+}
+
+a {
+	color:$dekstoptextcolor;
+	text-decoration: none; 
+
+
+}
+
+
+
+
+li{
+
+
+  list-style-type: none;
+	margin-left: 30px;
+}
+
+
+.headerdesktop{
+  display: flex;
+  background-color: $desktopbackgroundcolor;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+
+
+  .logodekstop{
+   
+    width: 140px;
+    height: 60px;
+    flex-grow: 1;
+    text-align: center;
+    
+    
+    
+    
+  }
+
+  .menudekstop{
+    display: flex;
+    flex: row;
+    margin-left: 5%;
+    align-self: center;
+
+  
+  
+    
+   
+  }
+
+  .menudekstop2{
+    display: flex;
+    flex: row;
+    align-self: center;
+    margin-right: 5%;
+  
+  }
+
+
+
+
+
+  
+
+
+
+}
+
+.subtextsuste{
+  display: block;
+  color: $yellowtext;
+  text-align: center;
+  font-size: 31px;
+  font-weight: 600;
+  margin-top: 15px;
+  
+}
+
+.bodydesktopmenu{
+  display: flex;
+  flex-direction: column;
+  background-color: $desktopbackgroundcolor;
+}
+
+.bodydesktopmenu1stline{
+  display: flex;
+  margin-top: 110px;
+  padding-left: 44px;
+}
+
+.articleimagedesktoptext{
+  flex: 1;
+  align-self: center;
+  margin-right: 10%;
+
+  h1{
+    text-align: left;
+  }
+}
+.articleimagedesktop{
+flex: 2;
+align-self: center;
+width: 60vh;
+height: 60vh;
+border:  solid 30px $desktopbackgroundcolor;
+outline: $dekstoptextcolor solid 6px;
+
+  .picturein{
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+.bodydesktopmenu2{
+  display: flex;
+  margin-top: 150px;
+  margin-right: 44px;
+  margin-left: 44px;
+}
+
+
+.bodydesktopmenu3stline{
+  display: flex;
+  margin-top: 150px;
+  border-top:  solid 50px $desktopbackgroundcolor;
+  outline: $dekstoptextcolor solid 5px;
+  border-bottom:  solid 50px $desktopbackgroundcolor;
+  outline: $dekstoptextcolor solid 5px;
+
+  .articleimagedesktoptext3{
+    flex: 1;
+    align-self: center;
+    margin-right: 3%;
+    margin-left: 3%;
+  
+    h1{
+      text-align: center;
+    }
+  }
+  .articleimagedesktop3{
+  flex: 1;
+ 
+  width: 51vh;
+  height: 65vh;
+
+  
+    .picturein3{
+      width: 100%;
+      height: 100%;
+    }
+  
+  
+  }
+
+}
+
+
+}  
