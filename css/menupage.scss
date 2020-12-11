@@ -458,7 +458,6 @@ h1{
   height: 675px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-image: url(../img/foodbackground.jpg);
   background-size: cover;
   background-position: 20% 90%;
@@ -661,6 +660,10 @@ height: 260px;
   display: none;
 }
 
+.bodydesktopmenu{
+  display: none;
+}
+
 
 /*DESKTOP CODE*/
 
@@ -691,7 +694,7 @@ li{
 
 .headerdesktop{
   display: flex;
-  background-color: $desktopbackgroundcolor;
+
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -741,12 +744,13 @@ li{
 }
 
 .subtextsuste{
+
   display: block;
   color: $yellowtext;
   text-align: center;
   font-size: 31px;
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 170px;
   
 }
 
@@ -776,7 +780,9 @@ flex: 2;
 align-self: center;
 width: 60vh;
 height: 60vh;
-border:  solid 30px $desktopbackgroundcolor;
+border-top:  solid 30px $desktopbackgroundcolor;
+border-bottom:  solid 30px $desktopbackgroundcolor;
+border-left:  solid 30px $desktopbackgroundcolor;
 outline: $dekstoptextcolor solid 6px;
 
   .picturein{
@@ -795,13 +801,25 @@ outline: $dekstoptextcolor solid 6px;
 }
 
 
+.bodydesktopmenu22{
+  display: flex;
+  padding-top: 150px;
+  margin-bottom: 60px;
+  margin-right: 44px;
+  margin-left: 44px;
+
+}
+
 .bodydesktopmenu3stline{
   display: flex;
-  margin-top: 150px;
-  border-top:  solid 50px $desktopbackgroundcolor;
-  outline: $dekstoptextcolor solid 5px;
-  border-bottom:  solid 50px $desktopbackgroundcolor;
-  outline: $dekstoptextcolor solid 5px;
+  margin-top: 50px;
+  padding-top: 40px;
+  border-top:  solid 5px $dekstoptextcolor;
+  padding-bottom: 40px;
+  border-bottom:  solid 5px $dekstoptextcolor;
+
+
+  
 
   .articleimagedesktoptext3{
     flex: 1;
@@ -829,6 +847,60 @@ outline: $dekstoptextcolor solid 6px;
   }
 
 }
+
+
+.bodydesktopmenu4stline{
+  display: flex;
+  padding-left: 44px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-top:  solid 5px $dekstoptextcolor;
+
+}
+
+.articleimagedesktoptext4{
+  flex: 1;
+  align-self: center;
+  margin-right: 10%;
+
+  h1{
+    text-align: left;
+  }
+}
+.articleimagedesktop4{
+flex: 2;
+align-self: center;
+width: 60vh;
+height: 60vh;
+
+
+  .picturein4{
+    width: 100%;
+    height: 100%;
+  }
+
+
+}
+
+
+
+
+.bodydesktopmenu222{
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  margin-right: 44px;
+  margin-left: 44px;
+  border-top:  solid 5px $dekstoptextcolor;
+  border-bottom:  solid 5px $dekstoptextcolor;
+
+}
+
+
+
+
+
+
 
 
 }  
