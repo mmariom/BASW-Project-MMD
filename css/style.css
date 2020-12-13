@@ -759,7 +759,7 @@ footer #fotspan {
     position: relative;
     overflow: hidden;
     background: #000000;
-    color: #DCF763;
+    color: #ffffff;
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -806,7 +806,7 @@ footer #fotspan {
     top: 0;
     left: 0;
     content: "";
-    background: #ffffff;
+    background: #3636AF;
     position: absolute;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -861,7 +861,7 @@ footer #fotspan {
     position: relative;
     overflow: hidden;
     background: #000000;
-    color: #DCF763;
+    color: #ffffff;
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -908,7 +908,7 @@ footer #fotspan {
     top: 0;
     left: 0;
     content: "";
-    background: #ffffff;
+    background: #3636AF;
     position: absolute;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -961,7 +961,7 @@ footer #fotspan {
     position: relative;
     overflow: hidden;
     background: #000000;
-    color: #DCF763;
+    color: #ffffff;
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1008,7 +1008,7 @@ footer #fotspan {
     top: 0;
     left: 3%;
     content: "";
-    background: #ffffff;
+    background: #3636AF;
     position: absolute;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -1061,7 +1061,7 @@ footer #fotspan {
     position: relative;
     overflow: hidden;
     background: #000000;
-    color: #DCF763;
+    color: #ffffff;
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1108,7 +1108,7 @@ footer #fotspan {
     top: -12%;
     left: -32%;
     content: "";
-    background: #ffffff;
+    background: #3636AF;
     position: absolute;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -1161,7 +1161,7 @@ footer #fotspan {
     position: relative;
     overflow: hidden;
     background: #000000;
-    color: #DCF763;
+    color: #ffffff;
     text-align: center;
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1208,7 +1208,7 @@ footer #fotspan {
     top: -10%;
     left: -10%;
     content: "";
-    background: #ffffff;
+    background: #3636AF;
     position: absolute;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
