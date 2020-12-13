@@ -317,8 +317,9 @@ body {
 }
 
 .header .logo #logo {
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 40px;
+  padding-top: 10px;
 }
 
 .header .extension {
@@ -332,8 +333,8 @@ body {
 }
 
 .header #logoham {
-  width: 148px;
-  height: 170px;
+  width: 135px;
+  height: 120px;
 }
 
 /*HEADER ENDS*/
@@ -504,7 +505,7 @@ h1 {
   text-align: center;
   font-size: 39px;
   font-weight: 800;
-  margin-top: 170px;
+  padding-top: 70%;
 }
 
 .body1zones {
@@ -710,6 +711,10 @@ h1 {
   height: 260px;
 }
 
+.subtextsuste {
+  display: none;
+}
+
 @media (min-width: 769px) {
   .header, footer, .body3article {
     display: none;
@@ -724,6 +729,14 @@ h1 {
     -webkit-animation: shine 2.5s infinite;
             animation: shine 2.5s infinite;
   }
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
   li {
     list-style-type: none;
     margin-left: 30px;
@@ -736,8 +749,8 @@ h1 {
     padding-bottom: 20px;
   }
   .logodekstop {
-    width: 140px;
-    height: 60px;
+    width: 45px;
+    height: 40px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -772,6 +785,14 @@ h1 {
     background-color: #0D0C1D;
     padding-top: 85px;
     padding-bottom: 50px;
+  }
+  .subtextsuste {
+    display: block;
+    color: #F1DAC4;
+    text-align: center;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 170px;
   }
   .bodydesktop {
     background-color: #0D0C1D;
@@ -928,6 +949,15 @@ h1 {
   .bodydesktop .image44 {
     width: 100%;
     height: 100%;
+  }
+  .seafloortext {
+    display: none;
+  }
+  .foodtext {
+    color: #F1DAC4;
+    text-align: center;
+    font-size: 39px;
+    font-weight: 800;
   }
   .footoerdesktop {
     display: -webkit-box;

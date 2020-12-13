@@ -317,8 +317,9 @@ body {
 }
 
 .header .logo #logo {
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 40px;
+  padding-top: 10px;
 }
 
 .header .extension {
@@ -332,8 +333,8 @@ body {
 }
 
 .header #logoham {
-  width: 148px;
-  height: 170px;
+  width: 135px;
+  height: 120px;
 }
 
 /*HEADER ENDS*/
@@ -460,7 +461,7 @@ footer #fotspan {
 
 .spiecenamewithspace {
   color: #F1DAC4;
-  margin-top: 150px;
+  margin-top: 80px;
   margin-bottom: 35px;
   font-size: 1.4em;
 }
@@ -563,8 +564,8 @@ footer #fotspan {
     padding-bottom: 20px;
   }
   .headerdesktop .logodekstop {
-    width: 140px;
-    height: 60px;
+    width: 45px;
+    height: 40px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
