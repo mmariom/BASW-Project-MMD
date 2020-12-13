@@ -339,7 +339,9 @@ body {
 /*HEADER ENDS*/
 /*BODY1 Begins*/
 .body1 {
-  background-color: #0D0C1D;
+  background-image: url(../img/ilustrejszynFinished.png);
+  background-size: cover;
+  background-position: 60%;
   width: 100%;
   height: 568px;
   display: -webkit-box;
@@ -367,9 +369,9 @@ body {
   color: #F1DAC4;
   font-size: 23px;
   text-align: center;
-  padding-left: 30px;
+  padding-left: 10px;
   padding-right: 30px;
-  margin-top: 55px;
+  margin-top: 25px;
 }
 
 /*BODY1 End*/
@@ -557,7 +559,6 @@ footer #fotspan {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #0D0C1D;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -592,8 +593,21 @@ footer #fotspan {
     margin-right: 5%;
   }
   .body1 {
-    background-image: url(../img/homepageimg11.jpg);
+    background-image: url(../img/ilustrejszynFinished.png);
+    background-position: 50%;
     height: 680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .body1 .textonhomepagedesk {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -601,24 +615,25 @@ footer #fotspan {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .body1 .body1text1 {
+  .body1 .textonhomepagedesk .body1text1 {
     color: #F1DAC4;
     font-size: 23px;
     height: 200px;
     width: 200px;
-    position: absolute;
-    left: 240px;
-    top: 250px;
+    padding-left: 15%;
+    padding-top: 3%;
   }
-  .body1 .body1text2 {
+  .body1 .textonhomepagedesk .body1text2 {
     color: #F1DAC4;
     font-size: 27px;
     height: 250px;
     width: 270px;
-    position: absolute;
-    right: 240px;
-    top: 250px;
+    padding-right: 10%;
+    padding-top: 10%;
   }
   .body2 {
     background-color: #161B33;

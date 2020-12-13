@@ -456,7 +456,6 @@ h1{
   height: 675px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-image: url(../img/foodbackground.jpg);
   background-size: cover;
   background-position: 20% 90%;
@@ -466,6 +465,7 @@ h1{
           text-align: center;
           font-size: 39px;
           font-weight: 800;
+          margin-top: 170px;
           
       }
 }
@@ -688,7 +688,6 @@ height: 260px;
 
   .headerdesktop{
     display: flex;
-    background-color: $desktopbackgroundcolor;
     padding-top: 20px;
     padding-bottom: 20px;
   }
