@@ -507,6 +507,31 @@ h1 {
   font-weight: 800;
 }
 
+.body1habitat {
+  width: 100%;
+  height: 675px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/Vents-on-the-Juan-de-Fuca-ridge.jpg);
+  background-size: cover;
+  background-position: 80% 90%;
+}
+
+.body1habitat .zonestext {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 800;
+}
+
 .body1zones {
   width: 100%;
   height: 675px;
@@ -525,7 +550,7 @@ h1 {
   background-position: 80% 90%;
 }
 
-.body1zones .zonestext {
+.body1zones .seafloortext {
   color: #F1DAC4;
   text-align: center;
   font-size: 39px;
