@@ -298,7 +298,6 @@ body{
     height: 675px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-image: url(../img/seafloor.jpg);
     background-size: cover;
     background-position: 10% 60%;
@@ -338,6 +337,14 @@ body{
 
 
 
+.seafloortextmobile{
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: oblique;
+  
+}
 
 
 
@@ -489,6 +496,17 @@ h1{
           font-weight: 800;
           
       }
+
+  
+}
+.seafloortextmobile{
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: oblique;
+  padding-top: 70%;
+  
 }
 
 .body1zones{
@@ -685,12 +703,13 @@ height: 260px;
 }
 
 
+
 /*DESKTOP CODE*/
 
 
 @media (min-width:  769px) {
 
-.header,.body3article, footer {
+.header,.body3article, footer,.seafloortextmobile {
   display: none;
 }
 
@@ -701,7 +720,29 @@ a {
 
 }
 
+.body1article{
+  display: none;
+}
 
+#body1articledesktop{
+
+  width: 100%;
+  height: 675px;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/habitats-desktop.jpg);
+  background-size: cover;
+  background-position: 10% 60%;
+
+      .seafloortext{
+          color: $yellowtext;
+          text-align: center;
+          font-size: 39px;
+          font-weight: 900;
+          font-style: oblique;
+          
+      }
+}
 
 
 li{
@@ -914,6 +955,10 @@ height: 60vh;
   border-top:  solid 5px $dekstoptextcolor;
   border-bottom:  solid 5px $dekstoptextcolor;
 
+}
+
+.body2article{
+  display: none;
 }
 
 

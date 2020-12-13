@@ -348,9 +348,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-image: url(../img/seafloor.jpg);
   background-size: cover;
   background-position: 10% 60%;
@@ -384,6 +381,14 @@ body {
 
 .body2article .arttext1 {
   text-align: center;
+}
+
+.seafloortextmobile {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: oblique;
 }
 
 footer {
@@ -507,29 +512,15 @@ h1 {
   font-weight: 800;
 }
 
-.body1habitat {
-  width: 100%;
-  height: 675px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: url(../img/Vents-on-the-Juan-de-Fuca-ridge.jpg);
-  background-size: cover;
-  background-position: 80% 90%;
-}
 
-.body1habitat .zonestext {
+.seafloortextmobile {
   color: #F1DAC4;
   text-align: center;
   font-size: 39px;
-  font-weight: 800;
+  font-weight: 900;
+  font-style: oblique;
+  padding-top: 70%;
+
 }
 
 .body1zones {
@@ -746,12 +737,36 @@ h1 {
 
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
-  .header, .body3article, footer {
+  .header, .body3article, footer, .seafloortextmobile {
     display: none;
   }
   a {
     color: #F1DAC4;
     text-decoration: none;
+  }
+  .body1article {
+    display: none;
+  }
+  #body1articledesktop {
+    width: 100%;
+    height: 675px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: url(../img/habitats-desktop.jpg);
+    background-size: cover;
+    background-position: 10% 60%;
+  }
+  #body1articledesktop .seafloortext {
+    color: #F1DAC4;
+    text-align: center;
+    font-size: 39px;
+    font-weight: 900;
+    font-style: oblique;
   }
   li {
     list-style-type: none;
@@ -945,6 +960,9 @@ h1 {
     margin-left: 44px;
     border-top: solid 5px #F1DAC4;
     border-bottom: solid 5px #F1DAC4;
+  }
+  .body2article {
+    display: none;
   }
 }
 /*# sourceMappingURL=menupage.css.map */

@@ -288,12 +288,17 @@ body{
 .body1{
 
 
-    background-color: $secondcolor;
+    background-image: url(../img/ilustrejszynFinished.png);
+    background-size:cover;
+    background-position: 60%  ; 
     width: 100%;
     height: 568px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+
+  
 
         .body1text1{
 
@@ -311,9 +316,9 @@ body{
             color: $yellowtext;
             font-size: 23px;
             text-align: center;
-            padding-left: 30px;
+            padding-left: 10px;
             padding-right:30px;
-            margin-top: 55px;
+            margin-top: 25px;
            
         }
 }
@@ -511,7 +516,6 @@ li{
 
 .headerdesktop{
   display: flex;
-  background-color: $desktopbackgroundcolor;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -560,37 +564,44 @@ li{
 
 .body1{
 
-  background-image: url(../img/homepageimg11.jpg);
+  background-image: url(../img/ilustrejszynFinished.png);
+  background-position: 50%;
   height: 680px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-start;
 
+
+  .textonhomepagedesk{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
     .body1text1{
-
+      
       color: $yellowtext;
       font-size: 23px;
       height: 200px;
       width: 200px;
-      position: absolute;
-      left: 240px;
-      top: 250px;
+      padding-left: 15%;
+      padding-top: 3%;
+    
+    }
+
+    .body1text2{
+    
+      color: $yellowtext;
+      font-size: 27px;
+      height: 250px;
+      width: 270px;
+      padding-right: 10%;
+      padding-top: 10%;
+   
       
 
-  }
-
-  .body1text2{
-
-    color: $yellowtext;
-    font-size: 27px;
-    height: 250px;
-    width: 270px;
-    position: absolute;
-    right: 240px;
-    top: 250px;
-    
-
-}
-}
+    }
+  } 
+ }
 
 .body2{
 
