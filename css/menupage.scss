@@ -317,40 +317,41 @@ body{
   margin-bottom: 30px;
 }
 
-.body2article{
 
-    background-color: $articlebackground;
-    color: white;
-    height: 100%;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-
-        .arttext1{
-
-            text-align: center;
-        }
-    
-
-
-        
-}
 
 
 
 .seafloortextmobile{
-  color: $yellowtext;
+  
   text-align: center;
-  font-size: 39px;
-  font-weight: 900;
-  font-style: oblique;
+  margin:10px;
+  padding-top: 45%;
+ 
   
 }
 
+.shabitat-mobile{
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  color: $yellowtext;
+  
+}
+.subhabitat-text-mobile{
+  font-size: 20px;
+  font-weight: 900;
+  font-style: normal;
+  color: $yellowtext;
+ 
+}
+.white-subtext-habitat-mobile{
 
+  font-size: 18px;
+  color:#ffffff;
+  
+
+
+}
 
 footer{
 
@@ -385,6 +386,8 @@ footer{
     .articletext1{
     padding-left: 31px;
     padding-right: 31px;
+    margin: 10px;
+    margin-bottom: 20px;
     }
 
 
@@ -442,7 +445,7 @@ h1{
 .video1{
 
     margin-top: 25px;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     width: 80%;
     height: 244px;
 }
@@ -452,7 +455,7 @@ h1{
 .video2{
 
   margin-top: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   width: 100%;
   height: 260px;
 }
@@ -503,15 +506,7 @@ h1{
 
   
 }
-.seafloortextmobile{
-  color: $yellowtext;
-  text-align: center;
-  font-size: 39px;
-  font-weight: 900;
-  font-style: oblique;
-  padding-top: 70%;
-  
-}
+
 
 .body1zones{
 
@@ -574,6 +569,7 @@ h1{
       height: 175px;
       background-size: cover;
       margin-bottom: 20px;
+      margin-top: 20px;
 
    
   }
@@ -689,7 +685,7 @@ h1{
 .video2{
 
 margin-top: 25px;
-margin-bottom: 60px;
+margin-bottom: 25px;
 width: 100%;
 height: 260px;
 }
@@ -754,7 +750,7 @@ a {
 #body1articledesktop{
 
   width: 100%;
-  height: 675px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-image: url(../img/habitats-desktopblurred.png);
@@ -766,7 +762,7 @@ a {
           text-align: center;
           font-size: 39px;
           font-weight: 900;
-          font-style: oblique;
+          font-style: normal;
           
       }
 }
@@ -838,7 +834,7 @@ li{
   text-align: center;
   font-size: 29px;
   font-weight: 600;
-  margin-top: 170px;
+  margin-top: 200px;
   
 }
 
@@ -886,7 +882,7 @@ height: 60vh;
 border-top:  solid 30px $desktopbackgroundcolor;
 border-bottom:  solid 30px $desktopbackgroundcolor;
 border-left:  solid 30px $desktopbackgroundcolor;
-outline: $dekstoptextcolor solid 6px;
+outline: $dekstoptextcolor solid 1px;
 
   .picturein{
     width: 100%;
@@ -917,9 +913,9 @@ outline: $dekstoptextcolor solid 6px;
   display: flex;
   margin-top: 50px;
   padding-top: 40px;
-  border-top:  solid 5px $dekstoptextcolor;
+  border-top:  solid 1px $dekstoptextcolor;
   padding-bottom: 40px;
-  border-bottom:  solid 5px $dekstoptextcolor;
+  border-bottom:  solid 1px $dekstoptextcolor;
 
 
   
@@ -932,6 +928,7 @@ outline: $dekstoptextcolor solid 6px;
   
     h1{
       text-align: center;
+      margin-top: 0;
     }
   }
   .articleimagedesktop3{
@@ -957,7 +954,7 @@ outline: $dekstoptextcolor solid 6px;
   padding-left: 44px;
   padding-top: 60px;
   padding-bottom: 60px;
-  border-top:  solid 5px $dekstoptextcolor;
+  border-top:  solid 1px $dekstoptextcolor;
 
 }
 
@@ -990,13 +987,17 @@ height: 60vh;
 
 .bodydesktopmenu222{
   display: flex;
-  padding-top: 150px;
+  padding-top: 120px;
   padding-bottom: 200px;
+  border-top:  solid 1px $dekstoptextcolor;
+  border-bottom:  solid 1px $dekstoptextcolor;
+
+}
+
+.video222{
   margin-right: 44px;
   margin-left: 44px;
-  border-top:  solid 5px $dekstoptextcolor;
-  border-bottom:  solid 5px $dekstoptextcolor;
-
+  width: 100%;
 }
 
 .body2article{
