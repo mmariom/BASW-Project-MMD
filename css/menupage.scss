@@ -15,10 +15,18 @@ body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
 
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x:hidden;
+  overflow-y:auto;
+
    
 
 }
-
+html {
+  overflow: hidden;
+}
 
 /*HEADER STARTS*/
 
@@ -296,23 +304,27 @@ body{
 .body1article{
 
     width: 100%;
-    height: 675px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url(../img/habitats-desktopblurred.png);
-    background-size: cover;
-    background-position: 10% 60%;
+  
 
         .seafloortext{
             color: $yellowtext;
             text-align: center;
             font-size: 39px;
             font-weight: 900;
-            font-style: oblique;
+            font-style: normal;
             
         }
 }
-  
+.mobilebody1{
+  background-image: url(../img/habitats-desktopblurred.png);
+  background-size: cover;
+  background-position: 20% 90%;
+  height: 100vh;
+}  
+
 .itemarticle3{
   margin-bottom: 30px;
 }
@@ -483,6 +495,33 @@ h1{
           font-weight: 800;
           
       }
+}
+
+
+.subtextfood{
+
+  display: block;
+  color: $yellowtext;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 600;
+  margin-top: 200px;
+  
+}
+
+.subtextfood p {
+  margin:10px
+}
+
+.white-subtext-food{
+
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  
+
 }
 
 .body1habitat{
@@ -711,7 +750,9 @@ height: 260px;
 
 @media (min-width:  769px) {
 
-.header,.body3article, footer,.seafloortextmobile {
+  
+
+.header,.body3article, footer,.seafloortextmobile,.subtextfood,.white-subtext-food {
   display: none;
 }
 
@@ -720,11 +761,10 @@ a {
 	text-decoration: none; 
 
 
+}.mobilebody1{
+  background-image: none;
 }
 
-.body1article{
-  display: none;
-}
 
 
 .menuhover:hover{
@@ -747,15 +787,16 @@ a {
   }
 }
 
-#body1articledesktop{
+.body1article{
 
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url(../img/habitats-desktopblurred.png);
-  background-size: cover;
-  background-position: 10% 60%;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  
+  
 
       .seafloortext{
           color: $yellowtext;
@@ -765,6 +806,20 @@ a {
           font-style: normal;
           
       }
+}
+
+.body1article::before {
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  background-image: url("../img/habitats-desktopblurred.png");
+  background-size: cover;
+  background-position: 10% 90%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
 }
 
 
@@ -850,13 +905,14 @@ li{
   font-size: 18px;
   font-weight: 600;
   
-
 }
 
 .bodydesktopmenu{
   display: flex;
   flex-direction: column;
   background-color: $desktopbackgroundcolor;
+  z-index: 2;
+  position: relative;
 }
 
 .bodydesktopmenu1stline{
