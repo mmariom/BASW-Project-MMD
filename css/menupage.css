@@ -349,7 +349,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../img/seafloor.jpg);
+  background-image: url(../img/habitats-desktopblurred.png);
   background-size: cover;
   background-position: 10% 60%;
 }
@@ -799,7 +799,7 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-image: url(../img/habitats-desktop.jpg);
+    background-image: url(../img/habitats-desktopblurred.png);
     background-size: cover;
     background-position: 10% 60%;
   }
@@ -855,9 +855,19 @@ h1 {
     display: block;
     color: #F1DAC4;
     text-align: center;
-    font-size: 31px;
+    font-size: 29px;
     font-weight: 600;
     margin-top: 170px;
+  }
+  .subtextsuste p {
+    margin: 10px;
+  }
+  .white-subtext-habitat {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
   }
   .bodydesktopmenu {
     display: -webkit-box;

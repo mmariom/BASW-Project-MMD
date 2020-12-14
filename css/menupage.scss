@@ -299,7 +299,7 @@ body{
     height: 675px;
     display: flex;
     flex-direction: column;
-    background-image: url(../img/seafloor.jpg);
+    background-image: url(../img/habitats-desktopblurred.png);
     background-size: cover;
     background-position: 10% 60%;
 
@@ -757,7 +757,7 @@ a {
   height: 675px;
   display: flex;
   flex-direction: column;
-  background-image: url(../img/habitats-desktop.jpg);
+  background-image: url(../img/habitats-desktopblurred.png);
   background-size: cover;
   background-position: 10% 60%;
 
@@ -836,10 +836,25 @@ li{
   display: block;
   color: $yellowtext;
   text-align: center;
-  font-size: 31px;
+  font-size: 29px;
   font-weight: 600;
   margin-top: 170px;
   
+}
+
+.subtextsuste p {
+  margin:10px
+}
+
+.white-subtext-habitat{
+
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  
+
 }
 
 .bodydesktopmenu{
