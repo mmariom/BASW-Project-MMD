@@ -481,9 +481,15 @@ h1{
 }
 
 #fishbackground1{
-    background-image: url(../img/jellyfish-noaa.jpg);
+    background-image: url(../img/Pteropoda.jpg);
     background-size: cover;
-    background-position: 20% 90%;
+    background-position: 10% 15%;
+}
+
+#fishbackground2{
+  background-image: url(../img/Pteropoda.jpg);
+  background-size: cover;
+  background-position: 10% 15%;
 }
 
 .body1habitat{
@@ -842,7 +848,9 @@ li{
   text-align: center;
   font-size: 31px;
   font-weight: 600;
-  margin-top: 170px;
+  margin-top: 130px;
+  margin-left: 70%;
+  margin-right: 10%;
   
 }
 
@@ -855,32 +863,68 @@ li{
 .bodydesktopmenu1stline{
   display: flex;
   margin-top: 110px;
-  padding-left: 44px;
+  padding-left: 155px;
+  padding-right: 155px;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
+
+
 }
 
 .articleimagedesktoptext{
   flex: 1;
   align-self: center;
+  padding: 20px;
+  border: 2px solid $dekstoptextcolor;
+  width: 47vh;
+  height: 45vh;
   margin-right: 10%;
+
+ .txtwhite{
+  font-size: 28px;
+  text-align: left;
+
+ }
+
+
+
 
   h1{
     text-align: left;
   }
 }
-.articleimagedesktop{
-flex: 2;
-align-self: center;
-width: 60vh;
-height: 60vh;
-border-top:  solid 30px $desktopbackgroundcolor;
-border-bottom:  solid 30px $desktopbackgroundcolor;
-border-left:  solid 30px $desktopbackgroundcolor;
-outline: $dekstoptextcolor solid 6px;
 
-  .picturein{
+
+.articleimagedesktoptext88{
+  flex: 1;
+  padding: 20px;
+  width: 47vh;
+  height: 45vh;
+  margin-right: 10%;
+  margin-bottom: 15%;
+
+  .picturein3{
     width: 100%;
     height: 100%;
   }
+
+ .txtwhite{
+  font-size: 28px;
+  text-align: left;
+
+ }
+
+
+}
+.articleimagedesktop{
+flex: 1;
+align-self: center;
+width: 50vh;
+height: 50vh;
+
+
+
+
 
 
 }
@@ -914,10 +958,13 @@ outline: $dekstoptextcolor solid 6px;
   
 
   .articleimagedesktoptext3{
-    flex: 1;
-    align-self: center;
-    margin-right: 3%;
-    margin-left: 3%;
+      flex: 1;
+      align-self: center;
+      padding: 20px;
+      border: 2px solid $dekstoptextcolor;
+      width: 47vh;
+      height: 45vh;
+      margin-right: 10%;
   
     h1{
       text-align: center;
@@ -944,9 +991,9 @@ outline: $dekstoptextcolor solid 6px;
 .bodydesktopmenu4stline{
   display: flex;
   padding-left: 44px;
-  padding-top: 60px;
+  padding-top: 100px;
   padding-bottom: 60px;
-  border-top:  solid 5px $dekstoptextcolor;
+ 
 
 }
 
@@ -954,6 +1001,7 @@ outline: $dekstoptextcolor solid 6px;
   flex: 1;
   align-self: center;
   margin-right: 10%;
+
 
   h1{
     text-align: left;
@@ -991,7 +1039,6 @@ height: 60vh;
 .body2article{
   display: none;
 }
-
 
 
 
