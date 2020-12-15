@@ -484,11 +484,30 @@ h1{
 
 }
 
+.foodtextVAMP{
+
+  color: $yellowtext;
+  text-align: left;
+  font-size: 39px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+
+}
+
 #fishbackground1{
     background-image: url(../img/Pteropoda.jpg);
     background-size: cover;
     background-position: 50% 50%;
 }
+
+#fishbackground1VAMP{
+  background-image: url(../img/notusedyet.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
+
 
 
 #fishbackgroundCRAB{
@@ -552,6 +571,17 @@ h1{
   font-weight: 900;
   font-style: normal;
   padding-top: 140px;
+  letter-spacing: 0.1em;
+
+}
+
+.seafloortextmobileVAMP{
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 600px;
   letter-spacing: 0.1em;
 
 }
@@ -737,6 +767,10 @@ height: 260px;
   display: none;
 }
 
+.subtextVAMP{
+  display: none;
+}
+
 
 /*DESKTOP CODE*/
 
@@ -753,6 +787,10 @@ a {
 
 
 }
+.seafloortextmobileVAMP{
+  display:none;
+}
+
 .seafloortextmobileCRAB{
   display: none;
 }
@@ -812,7 +850,26 @@ a {
   z-index: -1;
   transform:translateZ(-1px) scale(2);
 }
+.body1VAMP{
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  width: 100vw;
+  height:100vh;
 
+}
+
+.body1VAMP:before {
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/notusedyet.jpg");
+  background-size: cover;
+  background-position: 10% 10%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+
+}
 
 .body1ISOPOD{
   
@@ -988,6 +1045,20 @@ li{
   margin-right: 70%;
   
 }
+
+.subtextVAMP{
+
+  display: block;
+  color: $yellowtext;
+  text-align: left;
+  font-size: 31px;
+  font-weight: 600;
+  margin-top: 200px;
+  margin-left: 7%;
+  margin-right: 70%;
+
+}
+
 .subtextISOPOD{
 
   display: block;

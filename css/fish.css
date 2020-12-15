@@ -515,10 +515,25 @@ h1 {
   letter-spacing: 0.1em;
 }
 
+.foodtextVAMP {
+  color: #F1DAC4;
+  text-align: left;
+  font-size: 39px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
 #fishbackground1 {
   background-image: url(../img/Pteropoda.jpg);
   background-size: cover;
   background-position: 50% 50%;
+}
+
+#fishbackground1VAMP {
+  background-image: url(../img/notusedyet.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
 }
 
 #fishbackgroundCRAB {
@@ -575,6 +590,16 @@ h1 {
   font-weight: 900;
   font-style: normal;
   padding-top: 140px;
+  letter-spacing: 0.1em;
+}
+
+.seafloortextmobileVAMP {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 600px;
   letter-spacing: 0.1em;
 }
 
@@ -771,6 +796,10 @@ h1 {
   display: none;
 }
 
+.subtextVAMP {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
   .header, .body3article, .seafloortextmobile {
@@ -779,6 +808,9 @@ h1 {
   a {
     color: #F1DAC4;
     text-decoration: none;
+  }
+  .seafloortextmobileVAMP {
+    display: none;
   }
   .seafloortextmobileCRAB {
     display: none;
@@ -825,6 +857,26 @@ h1 {
     width: 100vw;
     height: 100vh;
     background-image: url("../img/Pteropoda.jpg");
+    background-size: cover;
+    background-position: 10% 10%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
+  .body1VAMP {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 100vw;
+    height: 100vh;
+  }
+  .body1VAMP:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/notusedyet.jpg");
     background-size: cover;
     background-position: 10% 10%;
     position: absolute;
@@ -975,6 +1027,16 @@ h1 {
     font-size: 31px;
     font-weight: 600;
     margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 70%;
+  }
+  .subtextVAMP {
+    display: block;
+    color: #F1DAC4;
+    text-align: left;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 200px;
     margin-left: 7%;
     margin-right: 70%;
   }
