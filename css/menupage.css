@@ -408,31 +408,6 @@ html {
   color: #ffffff;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  background-color: #161B33;
-  height: 40px;
-  color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top: 2px solid #F1DAC4;
-}
-
-footer #fotspan {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 /*BODY 3 end*/
 .body3article {
   display: -webkit-box;
@@ -831,7 +806,7 @@ p {
 
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
-  .header, .body3article, footer, .seafloortextmobile, .subtextfood, .white-subtext-food, .body2prespeach, .mobile-zone {
+  .header, .body3article, .seafloortextmobile, .subtextfood, .white-subtext-food, .body2prespeach, .mobile-zone {
     display: none;
   }
   a {

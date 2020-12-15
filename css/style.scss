@@ -373,25 +373,6 @@ boxhightlight*/
   
 }
 
-footer{
-
-    display: flex;
-    width: 100%;
-    background-color: $maincolor;
-    height: 40px;
-    color: white;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-top: 2px solid $yellowtext;
-    
- 
-
-        #fotspan{
-            
-            align-self: center;
-        }
-}
 
 /*BODY 3 end*/
 
@@ -618,9 +599,7 @@ li{
     }
 }
 
-footer{
-  display: none;
-}
+
 
 .spiecenamewithspace , .spiecename{
   display: none;
