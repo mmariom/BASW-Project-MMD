@@ -474,6 +474,15 @@ h1{
           
       }
 }
+.foodtextBARR{
+
+  color: $yellowtext;
+  text-align: left;
+  font-size: 39px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+
+}
 
 #fishbackground1{
     background-image: url(../img/Pteropoda.jpg);
@@ -493,6 +502,14 @@ h1{
 #fishbackgroundISOPOD{
 
   background-image: url(../img/DiPOUlwUwAE9VNW.jpg);
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 100vh;
+
+}
+#fishbackgroundBARR{
+
+  background-image: url(../img/homepageimg5.jpg);
   background-size: cover;
   background-position: 10% 30%;
   height: 100vh;
@@ -523,6 +540,18 @@ h1{
   font-weight: 900;
   font-style: normal;
   padding-top: 520px;
+  letter-spacing: 0.1em;
+
+}
+
+.seafloortextmobileBARR{
+
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 140px;
   letter-spacing: 0.1em;
 
 }
@@ -704,6 +733,10 @@ height: 260px;
   display: none;
 }
 
+.subtextBARR{
+  display: none;
+}
+
 
 /*DESKTOP CODE*/
 
@@ -730,7 +763,9 @@ a {
 .body1article{
   display: none;
 }
-
+.seafloortextmobileBARR{
+  display: none;
+}
 
 .menuhover:hover{
   
@@ -800,6 +835,25 @@ a {
 
 }
 
+.body1BARR{
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  width: 100vw;
+  height:100vh;
+
+}
+.body1BARR:before {
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/homepageimg5.jpg");
+  background-size: cover;
+  background-position: 10% 50%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+
+}
 
 .body1CRAB{
   box-sizing: border-box;
@@ -946,6 +1000,17 @@ li{
   margin-right: 10%;
   
 }
+.subtextBARR{
+  display: block;
+  color: $yellowtext;
+  text-align: left;
+  font-size: 31px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 7%;
+  margin-right: 70%;
+}
+
 .bodydesktopmenu{
   display: flex;
   flex-direction: column;
@@ -991,6 +1056,13 @@ li{
  }
 
 
+.txtwhiteBARR{
+  font-size: 25px;
+  text-align: left;
+  font-weight: 100;
+  color: white;
+
+}
 
 
   h1{
@@ -1009,11 +1081,16 @@ li{
   
 
   .picturein3{
-    width: 100%px;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     margin-top: 130px;
   }
+  .picturein3BARR{
 
+    width: 100%;
+    height: 90%;
+    margin-top: 100px;
+  }
   .picturein3ISOPOD{
 
     width: 600px;

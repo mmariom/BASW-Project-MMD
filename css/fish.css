@@ -507,6 +507,14 @@ h1 {
   font-weight: 900;
 }
 
+.foodtextBARR {
+  color: #F1DAC4;
+  text-align: left;
+  font-size: 39px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
 #fishbackground1 {
   background-image: url(../img/Pteropoda.jpg);
   background-size: cover;
@@ -522,6 +530,13 @@ h1 {
 
 #fishbackgroundISOPOD {
   background-image: url(../img/DiPOUlwUwAE9VNW.jpg);
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 100vh;
+}
+
+#fishbackgroundBARR {
+  background-image: url(../img/homepageimg5.jpg);
   background-size: cover;
   background-position: 10% 30%;
   height: 100vh;
@@ -550,6 +565,16 @@ h1 {
   font-weight: 900;
   font-style: normal;
   padding-top: 520px;
+  letter-spacing: 0.1em;
+}
+
+.seafloortextmobileBARR {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 140px;
   letter-spacing: 0.1em;
 }
 
@@ -742,6 +767,10 @@ h1 {
   display: none;
 }
 
+.subtextBARR {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
   .header, .body3article, .seafloortextmobile {
@@ -758,6 +787,9 @@ h1 {
     display: none;
   }
   .body1article {
+    display: none;
+  }
+  .seafloortextmobileBARR {
     display: none;
   }
   .menuhover:hover {
@@ -815,6 +847,26 @@ h1 {
     background-image: url("../img/DiPOUlwUwAE9VNW.jpg");
     background-size: cover;
     background-position: 10% 10%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
+  .body1BARR {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 100vw;
+    height: 100vh;
+  }
+  .body1BARR:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/homepageimg5.jpg");
+    background-size: cover;
+    background-position: 10% 50%;
     position: absolute;
     z-index: -1;
     -webkit-transform: translateZ(-1px) scale(2);
@@ -936,6 +988,16 @@ h1 {
     margin-left: 70%;
     margin-right: 10%;
   }
+  .subtextBARR {
+    display: block;
+    color: #F1DAC4;
+    text-align: left;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 70%;
+  }
   .bodydesktopmenu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -988,6 +1050,12 @@ h1 {
     text-align: left;
     font-weight: 100;
   }
+  .articleimagedesktoptext .txtwhiteBARR {
+    font-size: 25px;
+    text-align: left;
+    font-weight: 100;
+    color: white;
+  }
   .articleimagedesktoptext h1 {
     text-align: left;
   }
@@ -1002,9 +1070,14 @@ h1 {
     margin-bottom: 15%;
   }
   .articleimagedesktoptext88 .picturein3 {
-    width: 100%px;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     margin-top: 130px;
+  }
+  .articleimagedesktoptext88 .picturein3BARR {
+    width: 100%;
+    height: 90%;
+    margin-top: 100px;
   }
   .articleimagedesktoptext88 .picturein3ISOPOD {
     width: 600px;
