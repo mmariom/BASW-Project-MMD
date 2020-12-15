@@ -562,24 +562,15 @@ h1{
 }
 
 
-.body1zones{
 
+.mobile1zones{
+  background-image: url(../img/zones-blurred.png);
+  background-position: 50% 60%;
+  background-size: cover ;
   width: 100%;
-  height: 675px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-image: url(../img/zones-blurred.png);
-  background-size: cover;;
-  background-position: 80% 90%;
-
-      .zonestext{
-          color: $yellowtext;
-          text-align: center;
-          font-size: 39px;
-          font-weight: 800;
-          
-      }
 }
 
 .body2prespeach{
@@ -777,6 +768,10 @@ height: 260px;
   display: none;
 }
 
+.body2desktop{
+  display: none;
+}
+
 p{
   margin-bottom:5px;
 }
@@ -788,7 +783,7 @@ p{
 
   
 
-.header,.body3article, footer,.seafloortextmobile,.subtextfood,.white-subtext-food {
+.header,.body3article, footer,.seafloortextmobile,.subtextfood,.white-subtext-food,.body2prespeach {
   display: none;
 }
 
@@ -800,7 +795,9 @@ a {
 }.mobilebody1{
   background-image: none;
 }
-
+.mobile1zones{
+  background-image: none;
+}
 
 
 .menuhover:hover{
@@ -877,6 +874,7 @@ a {
     transform:translateZ(-1px) scale(2);
 }
 
+
 li{
 
 
@@ -929,6 +927,79 @@ li{
 
 }
 
+.body1zones{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+.body1zones::before{
+
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  background-image: url("../img/zones-blurred.png");
+  background-size: cover;
+  background-position: 30% 50%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+
+}
+
+.body2desktop{
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: $desktopbackgroundcolor;
+}
+
+.bodydesktopZONE1stline{
+
+  display: flex;
+  margin-top: 110px;
+  padding-left: 44px;
+
+}
+/*zone main view*/
+.subtextzone{
+  display: block;
+  color: $yellowtext;
+  text-align: center;
+  margin-top: 170px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.zonestext{
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  
+}
+
+
+.subzone-text{
+  display: block;
+  color: $yellowtext;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  
+}
+.white-subtext-zone{
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/*food main view*/
 .subtextsuste{
 
   display: block;
@@ -964,7 +1035,7 @@ li{
   
 }
 
-
+/*habitat main view*/
 .white-subtext-habitat{
 
   display: block;
@@ -1063,8 +1134,7 @@ outline: $dekstoptextcolor solid 1px;
   border-top:  solid 1px $dekstoptextcolor;
   padding-bottom: 60px;
   border-bottom:  solid 1px $dekstoptextcolor;
-
-
+ 
   
 
   .articleimagedesktoptext3{
@@ -1082,7 +1152,7 @@ outline: $dekstoptextcolor solid 1px;
   flex: 1;
  
   width: 61vh;
-  height: 50vh;
+  height: 60vh;
   
 
   
