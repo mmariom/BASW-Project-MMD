@@ -498,7 +498,7 @@ h1 {
   color: #F1DAC4;
   text-align: left;
   font-size: 39px;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 #fishbackground1 {
@@ -507,10 +507,27 @@ h1 {
   background-position: 50% 50%;
 }
 
+#fishbackgroundCRAB {
+  background-image: url(../img/homepageimg2.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+
 #fishbackground2 {
   background-image: url(../img/Pteropoda.jpg);
   background-size: cover;
   background-position: 10% 15%;
+}
+
+.seafloortextmobileCRAB {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 25%;
+  letter-spacing: 0.1em;
 }
 
 .seafloortextmobile {
@@ -694,6 +711,10 @@ h1 {
   display: none;
 }
 
+.subtextCRAB {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
   .header, .body3article, .seafloortextmobile {
@@ -702,6 +723,9 @@ h1 {
   a {
     color: #F1DAC4;
     text-decoration: none;
+  }
+  .seafloortextmobileCRAB {
+    display: none;
   }
   .body1article {
     display: none;
@@ -742,6 +766,48 @@ h1 {
     z-index: -1;
     -webkit-transform: translateZ(-1px) scale(2);
             transform: translateZ(-1px) scale(2);
+  }
+  .body1CRAB {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 100vw;
+    height: 100vh;
+  }
+  .body1CRAB:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/homepageimg2.jpg");
+    background-size: cover;
+    background-position: 10% 60%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
+  .foodtextCRAB {
+    letter-spacing: 0.1em;
+  }
+  .txtwhiteCRAB {
+    font-size: 24px;
+    text-align: left;
+    color: white;
+  }
+  .articleimagedesktoptextCRAB {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 20px;
+    padding-top: 20px;
+    border: 2px solid #F1DAC4;
+    width: 47vh;
+    height: 45vh;
+    margin-right: 10%;
   }
   li {
     list-style-type: none;
@@ -793,6 +859,16 @@ h1 {
     margin-top: 130px;
     margin-left: 70%;
     margin-right: 10%;
+  }
+  .subtextCRAB {
+    display: block;
+    color: #F1DAC4;
+    text-align: left;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 70%;
   }
   .bodydesktopmenu {
     display: -webkit-box;

@@ -464,7 +464,7 @@ h1{
           color: $yellowtext;
           text-align: left;
           font-size: 39px;
-          font-weight: 800;
+          font-weight: 900;
           
       }
 }
@@ -475,13 +475,33 @@ h1{
     background-position: 50% 50%;
 }
 
+
+#fishbackgroundCRAB{
+  background-image: url(../img/homepageimg2.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+
+}
+
 #fishbackground2{
   background-image: url(../img/Pteropoda.jpg);
   background-size: cover;
   background-position: 10% 15%;
 }
 
+.seafloortextmobileCRAB{
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 25%;
+  letter-spacing: 0.1em;
+  
+  
 
+}
 .seafloortextmobile{
   color: $yellowtext;
   text-align: center;
@@ -651,7 +671,9 @@ height: 260px;
 .bodydesktopmenu{
   display: none;
 }
-
+.subtextCRAB{
+  display: none;
+}
 
 
 /*DESKTOP CODE*/
@@ -668,6 +690,9 @@ a {
 	text-decoration: none; 
 
 
+}
+.seafloortextmobileCRAB{
+  display: none;
 }
 
 .body1article{
@@ -717,6 +742,50 @@ a {
   position: absolute;
   z-index: -1;
   transform:translateZ(-1px) scale(2);
+}
+.body1CRAB{
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  width: 100vw;
+  height:100vh;
+}
+
+.body1CRAB:before {
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/homepageimg2.jpg");
+  background-size: cover;
+  background-position: 10% 60%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+
+}
+.foodtextCRAB{
+
+  letter-spacing: 0.1em;
+
+}
+.txtwhiteCRAB{
+  
+    font-size: 24px;
+    text-align: left;
+    color: white;
+ 
+}
+
+.articleimagedesktoptextCRAB{
+  flex: 1;
+  align-self: center;
+  padding: 20px;
+  padding-top:20px;
+  border: 2px solid $dekstoptextcolor;
+  width: 47vh;
+  height: 45vh;
+  margin-right: 10%;
+ 
+
 }
 
 li{
@@ -788,6 +857,18 @@ li{
   margin-top: 130px;
   margin-left: 70%;
   margin-right: 10%;
+  
+}
+
+.subtextCRAB{
+  display: block;
+  color: $yellowtext;
+  text-align: left;
+  font-size: 31px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 7%;
+  margin-right: 70%;
   
 }
 

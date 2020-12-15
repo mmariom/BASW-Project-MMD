@@ -353,7 +353,7 @@ html {
 .body1 {
   background-image: url(../img/ilustrejszynFinished.png);
   background-size: cover;
-  background-position: 60%;
+  background-position: 50% 10%;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -375,6 +375,7 @@ html {
   padding-left: 30px;
   padding-right: 30px;
   font-weight: 900;
+  text-shadow: 2px 2px 1px black;
 }
 
 .body1 .body1text2 {
@@ -384,6 +385,7 @@ html {
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 30px;
+  text-shadow: 2px 2px 1px black;
 }
 
 .textonhomepagedesk {
@@ -598,6 +600,7 @@ boxhightlight*/
     left: 0;
     background-image: url("../img/ilustrejszynFinished.png");
     background-position: 50% 50%;
+    background-size: cover;
     position: absolute;
     z-index: -1;
     -webkit-transform: translateZ(-1px) scale(2);
