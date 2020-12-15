@@ -416,6 +416,12 @@ html {
   
 }
 
+.itemarticle4ISOPOD{
+  width: 100%;
+  height: 90%;
+  background-size: cover;
+}
+
 .txtwhite{
     font-size: 18px;
     color: white;
@@ -484,6 +490,15 @@ h1{
 
 }
 
+#fishbackgroundISOPOD{
+
+  background-image: url(../img/DiPOUlwUwAE9VNW.jpg);
+  background-size: cover;
+  background-position: 10% 30%;
+  height: 100vh;
+
+}
+
 #fishbackground2{
   background-image: url(../img/Pteropoda.jpg);
   background-size: cover;
@@ -499,9 +514,19 @@ h1{
   padding-top: 25%;
   letter-spacing: 0.1em;
   
-  
+}
+.seafloortextmobileISOPOD{
+
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 520px;
+  letter-spacing: 0.1em;
 
 }
+
 .seafloortextmobile{
   color: $yellowtext;
   text-align: center;
@@ -675,6 +700,10 @@ height: 260px;
   display: none;
 }
 
+.subtextISOPOD{
+  display: none;
+}
+
 
 /*DESKTOP CODE*/
 
@@ -693,6 +722,9 @@ a {
 }
 .seafloortextmobileCRAB{
   display: none;
+}
+.seafloortextmobileISOPOD{
+  display:none;
 }
 
 .body1article{
@@ -723,7 +755,9 @@ a {
 #fishbackground1{
   background-image: none;
 }
-
+#fishbackgroundISOPOD{
+  background-image: none;
+}
 
 .body1food{
   box-sizing: border-box;
@@ -743,6 +777,30 @@ a {
   z-index: -1;
   transform:translateZ(-1px) scale(2);
 }
+
+
+.body1ISOPOD{
+  
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  width: 100vw;
+  height:100vh;
+}
+
+.body1ISOPOD:before {
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/DiPOUlwUwAE9VNW.jpg");
+  background-size: cover;
+  background-position: 10% 10%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+
+}
+
+
 .body1CRAB{
   box-sizing: border-box;
   transform-style: preserve-3d;
@@ -767,11 +825,16 @@ a {
   letter-spacing: 0.1em;
 
 }
+
+.foodtextISOPOD{
+  letter-spacing: 0.1em;
+}
 .txtwhiteCRAB{
   
     font-size: 24px;
     text-align: left;
     color: white;
+
  
 }
 
@@ -871,7 +934,18 @@ li{
   margin-right: 70%;
   
 }
+.subtextISOPOD{
 
+  display: block;
+  color: $yellowtext;
+  text-align: left;
+  font-size: 31px;
+  font-weight: 600;
+  margin-top: 390px;
+  margin-left: 70%;
+  margin-right: 10%;
+  
+}
 .bodydesktopmenu{
   display: flex;
   flex-direction: column;
@@ -935,9 +1009,17 @@ li{
   
 
   .picturein3{
+    width: 100%px;
+    height: 50%;
+    margin-top: 130px;
+  }
+
+  .picturein3ISOPOD{
+
     width: 600px;
     height: 100%;
     margin-top: 130px;
+
   }
 
  .txtwhite{
