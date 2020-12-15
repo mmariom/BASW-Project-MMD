@@ -392,6 +392,7 @@ html {
   font-weight: 900;
   font-style: normal;
   color: #F1DAC4;
+  letter-spacing: 0.1em;
 }
 
 .subhabitat-text-mobile {
@@ -399,6 +400,7 @@ html {
   font-weight: 900;
   font-style: normal;
   color: #F1DAC4;
+  letter-spacing: 0.1em;
 }
 
 .white-subtext-habitat-mobile {
@@ -533,6 +535,34 @@ h1 {
   height: 100vh;
 }
 
+/*zones mobile */
+.mobile-zone {
+  display: block;
+  color: #F1DAC4;
+  text-align: center;
+  margin-top: 120px;
+  padding: 35px;
+}
+
+.zonestext-mobile {
+  font-size: 39px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.subzone-text-mobile {
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.white-subtext-zone-mobile {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+
 .subtextfood {
   display: block;
   color: #F1DAC4;
@@ -544,11 +574,13 @@ h1 {
 .sustenance {
   font-size: 39px;
   font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .lowertext {
   font-size: 23px;
   font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .white-subtext-food {
@@ -585,7 +617,7 @@ h1 {
 
 .mobile1zones {
   background-image: url(../img/zones-blurred.png);
-  background-position: 50% 60%;
+  background-position: 50% 80%;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -600,25 +632,10 @@ h1 {
 
 .body2prespeach {
   background-color: #0D0C1D;
-  color: white;
-  height: 100%;
-  font-size: 18px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.body2prespeach .prespeach {
-  margin: 20px;
-  text-align: center;
 }
 
 .body3article {
@@ -673,7 +690,7 @@ h1 {
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 675px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,7 +708,7 @@ h1 {
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 355px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -709,7 +726,7 @@ h1 {
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 355px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,7 +744,7 @@ h1 {
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 355px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,6 +800,10 @@ h1 {
   height: 260px;
 }
 
+.subtextzone, .subzone-text, .white-subtext-zone {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 .headerdesktop {
   display: none;
@@ -810,7 +831,7 @@ p {
 
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
-  .header, .body3article, footer, .seafloortextmobile, .subtextfood, .white-subtext-food, .body2prespeach {
+  .header, .body3article, footer, .seafloortextmobile, .subtextfood, .white-subtext-food, .body2prespeach, .mobile-zone {
     display: none;
   }
   a {
@@ -858,6 +879,7 @@ p {
     font-size: 39px;
     font-weight: 900;
     font-style: normal;
+    letter-spacing: 0.1em;
   }
   .body1article::before {
     content: "";
@@ -989,6 +1011,7 @@ p {
     text-align: center;
     font-size: 39px;
     font-weight: 900;
+    letter-spacing: 0.1em;
   }
   .subzone-text {
     display: block;
@@ -996,6 +1019,7 @@ p {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
+    letter-spacing: 0.1em;
   }
   .white-subtext-zone {
     display: block;
@@ -1017,12 +1041,14 @@ p {
     text-align: center;
     font-size: 39px;
     font-weight: 900;
+    letter-spacing: 0.1em;
   }
   .lowertext-desktop {
     display: block;
     color: #F1DAC4;
     text-align: center;
     font-size: 30px;
+    letter-spacing: 0.1em;
   }
   .white-subtext-food-desktop {
     display: block;
@@ -1051,6 +1077,7 @@ p {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
+    letter-spacing: 0.1em;
   }
   p {
     margin-bottom: 5px;
