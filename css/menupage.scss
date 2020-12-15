@@ -347,6 +347,7 @@ html {
   font-weight: 900;
   font-style: normal;
   color: $yellowtext;
+  letter-spacing: 0.1em;
   
 }
 .subhabitat-text-mobile{
@@ -354,6 +355,7 @@ html {
   font-weight: 900;
   font-style: normal;
   color: $yellowtext;
+  letter-spacing: 0.1em;
  
 }
 .white-subtext-habitat-mobile{
@@ -401,6 +403,7 @@ footer{
     padding-right: 31px;
     margin: 10px;
     margin-bottom: 10px;
+    
     }
 
 
@@ -507,7 +510,35 @@ h1{
   height: 100vh;
   
 }
+/*zones mobile */
+.mobile-zone{
+  display: block;
+  color: $yellowtext;
+  text-align: center;
+  margin-top: 120px;
+  padding: 35px;
+  
+}
 
+.zonestext-mobile{
+  font-size: 39px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.subzone-text-mobile{
+  font-size: 23px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.white-subtext-zone-mobile{
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  
+}
 
 .subtextfood{
 
@@ -521,11 +552,13 @@ h1{
 .sustenance{
   font-size: 39px;
   font-weight: 900;
+  letter-spacing: 0.1em;
 }
 .lowertext {
   
   font-size: 23px;
   font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .white-subtext-food{
@@ -565,7 +598,7 @@ h1{
 
 .mobile1zones{
   background-image: url(../img/zones-blurred.png);
-  background-position: 50% 60%;
+  background-position: 50% 80%;
   background-size: cover ;
   width: 100%;
   height: 100vh;
@@ -576,23 +609,8 @@ h1{
 .body2prespeach{
 
   background-color: $articlebackground;
-  color: white;
-  height: 100%;
-  font-size: 18px;
+  height: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-      .prespeach{
-        margin: 20px;
-
-          text-align: center;
-      }
-  
-
-
       
 }
 
@@ -605,6 +623,7 @@ h1{
   .articletext1{
   padding-left: 31px;
   padding-right: 31px;
+  
   }
 
 
@@ -650,7 +669,7 @@ h1{
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 675px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -663,7 +682,7 @@ h1{
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 355px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -674,7 +693,7 @@ h1{
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 355px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -689,7 +708,7 @@ h1{
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
-  height: 355px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -750,6 +769,10 @@ width: 100%;
 height: 260px;
 }
 
+.subtextzone, .subzone-text, .white-subtext-zone{
+  display: none;
+}
+
 /*DESKTOP CODE*/
 
 .headerdesktop{
@@ -783,7 +806,7 @@ p{
 
   
 
-.header,.body3article, footer,.seafloortextmobile,.subtextfood,.white-subtext-food,.body2prespeach {
+.header,.body3article, footer,.seafloortextmobile,.subtextfood,.white-subtext-food,.body2prespeach,.mobile-zone {
   display: none;
 }
 
@@ -837,6 +860,7 @@ a {
           font-size: 39px;
           font-weight: 900;
           font-style: normal;
+          letter-spacing: 0.1em;
           
       }
 }
@@ -979,6 +1003,8 @@ li{
   text-align: center;
   font-size: 39px;
   font-weight: 900;
+  letter-spacing: 0.1em;
+  
   
 }
 
@@ -989,6 +1015,7 @@ li{
   text-align: center;
   font-size: 30px;
   font-weight: 600;
+  letter-spacing: 0.1em;
   
 }
 .white-subtext-zone{
@@ -1015,6 +1042,7 @@ li{
     text-align: center;
     font-size: 39px;
     font-weight: 900;
+    letter-spacing: 0.1em;
           
 }
 
@@ -1023,6 +1051,7 @@ li{
   color: $yellowtext;
   text-align: center;
   font-size:30px;
+  letter-spacing: 0.1em;
 
 }
 
@@ -1061,6 +1090,7 @@ li{
   text-align: center;
   font-size: 30px;
   font-weight: 600;
+  letter-spacing: 0.1em;
   
   
 }

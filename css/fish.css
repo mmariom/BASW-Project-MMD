@@ -520,6 +520,12 @@ h1 {
   background-position: 10% 15%;
 }
 
+#fishbackground2 {
+  background-image: url(../img/Pteropoda.jpg);
+  background-size: cover;
+  background-position: 10% 15%;
+}
+
 .body1habitat {
   width: 100%;
   height: 675px;
