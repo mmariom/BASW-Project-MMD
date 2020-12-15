@@ -13,12 +13,17 @@ $dekstoptextcolor :#F1DAC4;
 body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
-
-   
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
 
 }
 
-
+html {
+  overflow: hidden;
+}
 /*HEADER STARTS*/
 
 .header{
@@ -293,10 +298,10 @@ body{
     background-size:cover;
     background-position: 60%  ; 
     width: 100%;
-    height: 568px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 
 
   
@@ -304,25 +309,33 @@ body{
         .body1text1{
 
             color: $yellowtext;
-            font-size: 23px;
+            font-size: 18px;
             text-align: center;
             padding-left: 30px;
             padding-right:30px;
-            margin-top: 85px;
+            font-weight: 900;
+           
+            
   
         }
 
         .body1text2{
 
             color: $yellowtext;
-            font-size: 23px;
+            font-size: 18px;
             text-align: center;
-            padding-left: 10px;
+            padding-left: 30px;
             padding-right:30px;
-            margin-top: 25px;
+            margin-top: 30px;
            
         }
 }
+
+.textonhomepagedesk{
+  margin-top:60px;
+  letter-spacing: 0.1em;
+}
+
 /*BODY1 End*/
 
 /*BODY2 Begins*/
@@ -330,7 +343,7 @@ body{
 
     background-color: $maincolor;
     color: $yellowtext;
-    height: 100%;
+    height: 10%;
     font-size: 2rem;
     display: flex;
     justify-content: center;
@@ -476,6 +489,11 @@ boxhightlight*/
   display: none;
 }
 
+.body1{
+  background-image:none;
+  
+}
+
 a {
 	color:$dekstoptextcolor;
 	text-decoration: none; 
@@ -537,21 +555,34 @@ li{
   }
 
 
-  
 
 
 
 }
+.body2{
+  height: 20%;
+}
 
-
+.body1::before{
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  background-image: url("../img/ilustrejszynFinished.png");
+  background-position: 50% 50%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+}
 .body1{
-
-  background-image: url(../img/ilustrejszynFinished.png);
-  background-position: 50%;
-  height: 680px;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 100vw;
 
 
   .textonhomepagedesk{
@@ -563,21 +594,22 @@ li{
       
       color: $yellowtext;
       font-size: 23px;
-      height: 200px;
-      width: 200px;
-      padding-left: 15%;
-      padding-top: 3%;
+      height: 250px;
+      width: 400px;
+      padding-left: 7%;
+      padding-top: 9%;
+      font-weight: normal;
     
     }
 
     .body1text2{
     
       color: $yellowtext;
-      font-size: 27px;
+      font-size: 23px;
       height: 250px;
-      width: 270px;
-      padding-right: 10%;
-      padding-top: 10%;
+      width: 400px;
+      padding-right: 5%;
+      padding-top: 7%;
    
       
 
@@ -585,10 +617,13 @@ li{
   } 
  }
 
+
 .body2{
 
   background-color: $desktopmaincolor;
   padding:  50px 50px;
+  z-index: 2;
+  position: relative;
 
     .divedown{
 
@@ -617,6 +652,8 @@ li{
   padding-left:  4.9%;
   padding-right:  4.9%;
   padding-bottom: 71px;
+  z-index: 2;
+  position: relative;
 
 
   .firststlineingallery{
@@ -734,6 +771,14 @@ li{
   width: 100%;
   height: 100%;
   background-size: cover;
+
+}
+.gimage44{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+
+
 
 }
 

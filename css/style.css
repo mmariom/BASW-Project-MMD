@@ -2,6 +2,17 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html {
+  overflow: hidden;
 }
 
 /*HEADER STARTS*/
@@ -344,7 +355,7 @@ body {
   background-size: cover;
   background-position: 60%;
   width: 100%;
-  height: 568px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,27 +363,32 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .body1 .body1text1 {
   color: #F1DAC4;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
-  margin-top: 85px;
+  font-weight: 900;
 }
 
 .body1 .body1text2 {
   color: #F1DAC4;
-  font-size: 23px;
+  font-size: 18px;
   text-align: center;
-  padding-left: 10px;
+  padding-left: 30px;
   padding-right: 30px;
-  margin-top: 25px;
+  margin-top: 30px;
+}
+
+.textonhomepagedesk {
+  margin-top: 60px;
+  letter-spacing: 0.1em;
 }
 
 /*BODY1 End*/
@@ -380,7 +396,7 @@ body {
 .body2 {
   background-color: #161B33;
   color: #F1DAC4;
-  height: 100%;
+  height: 10%;
   font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -523,6 +539,9 @@ boxhightlight*/
   .header {
     display: none;
   }
+  .body1 {
+    background-image: none;
+  }
   a {
     color: #F1DAC4;
     text-decoration: none;
@@ -568,10 +587,28 @@ boxhightlight*/
         align-self: center;
     margin-right: 5%;
   }
+  .body2 {
+    height: 20%;
+  }
+  .body1::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../img/ilustrejszynFinished.png");
+    background-position: 50% 50%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
   .body1 {
-    background-image: url(../img/ilustrejszynFinished.png);
-    background-position: 50%;
-    height: 680px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -582,6 +619,7 @@ boxhightlight*/
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    width: 100vw;
   }
   .body1 .textonhomepagedesk {
     display: -webkit-box;
@@ -598,22 +636,25 @@ boxhightlight*/
   .body1 .textonhomepagedesk .body1text1 {
     color: #F1DAC4;
     font-size: 23px;
-    height: 200px;
-    width: 200px;
-    padding-left: 15%;
-    padding-top: 3%;
+    height: 250px;
+    width: 400px;
+    padding-left: 7%;
+    padding-top: 9%;
+    font-weight: normal;
   }
   .body1 .textonhomepagedesk .body1text2 {
     color: #F1DAC4;
-    font-size: 27px;
+    font-size: 23px;
     height: 250px;
-    width: 270px;
-    padding-right: 10%;
-    padding-top: 10%;
+    width: 400px;
+    padding-right: 5%;
+    padding-top: 7%;
   }
   .body2 {
     background-color: #161B33;
     padding: 50px 50px;
+    z-index: 2;
+    position: relative;
   }
   .body2 .divedown {
     font-size: 2em;
@@ -634,6 +675,8 @@ boxhightlight*/
     padding-left: 4.9%;
     padding-right: 4.9%;
     padding-bottom: 71px;
+    z-index: 2;
+    position: relative;
   }
   .gallery .firststlineingallery {
     display: -webkit-box;
@@ -709,6 +752,11 @@ boxhightlight*/
     display: flex;
   }
   .gimage4 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  .gimage44 {
     width: 100%;
     height: 100%;
     background-size: cover;
