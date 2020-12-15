@@ -14,9 +14,16 @@ $dekstoptextcolor :#F1DAC4;
 body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
-
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
    
 
+}
+html {
+  overflow: hidden;
 }
 
 
@@ -346,31 +353,11 @@ body{
   text-align: center;
   font-size: 39px;
   font-weight: 900;
-  font-style: oblique;
+  font-style: normal;
   
 }
 
 
-
-footer{
-
-    display: flex;
-    width: 100%;
-    background-color: $maincolor;
-    height: 40px;
-    color: white;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-top: 2px solid $yellowtext;
-    
- 
-
-        #fotspan{
-            
-            align-self: center;
-        }
-}
 
 /*BODY 3 end*/
 
@@ -385,6 +372,7 @@ footer{
     .articletext1{
     padding-left: 31px;
     padding-right: 31px;
+    margin-bottom:10px
     }
 
 
@@ -419,6 +407,7 @@ footer{
       width: 100%;
       height: 319px;
       background-size: cover;
+      
 
     }
 
@@ -436,7 +425,7 @@ footer{
 h1{
 
     color: $yellowtext;
-    text-align: center;
+    text-align: left;
 }
 
 .video1{
@@ -473,7 +462,7 @@ h1{
 
       .foodtext{
           color: $yellowtext;
-          text-align: center;
+          text-align: left;
           font-size: 39px;
           font-weight: 800;
           
@@ -483,7 +472,7 @@ h1{
 #fishbackground1{
     background-image: url(../img/Pteropoda.jpg);
     background-size: cover;
-    background-position: 10% 15%;
+    background-position: 50% 50%;
 }
 
 #fishbackground2{
@@ -492,78 +481,22 @@ h1{
   background-position: 10% 15%;
 }
 
-.body1habitat{
 
-  width: 100%;
-  height: 675px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(../img/Vents-on-the-Juan-de-Fuca-ridge.jpg);
-  background-size: cover;;
-  background-position: 80% 90%;
-
-      .habitattext{
-          color: $yellowtext;
-          text-align: center;
-          font-size: 39px;
-          font-weight: 800;
-          
-      }
-
-  
-}
 .seafloortextmobile{
   color: $yellowtext;
   text-align: center;
   font-size: 39px;
   font-weight: 900;
-  font-style: oblique;
-  padding-top: 70%;
+  font-style: normal;
+  padding-top: 85%;
+  text-shadow: black 2px 2px 1px;
   
 }
+.txtwhite1{
+  font-size: 28px;
+  text-align: left;
+  color: #F1DAC4;
 
-.body1zones{
-
-  width: 100%;
-  height: 675px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-image: url(../img/NatGeoDeepSeaExplore.jpg);
-  background-size: cover;;
-  background-position: 80% 90%;
-
-      .zonestext{
-          color: $yellowtext;
-          text-align: center;
-          font-size: 39px;
-          font-weight: 800;
-          
-      }
-}
-
-.body2prespeach{
-
-  background-color: $articlebackground;
-  color: white;
-  height: 100%;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-      .prespeach{
-        margin: 20px;
-
-          text-align: center;
-      }
-  
-
-
-      
 }
 
 .body3article{
@@ -606,7 +539,7 @@ h1{
   }
 
   .itemarticle4{
-    width: 100%;
+    width: 95%;
     height: 319px;
     background-size: cover;
 
@@ -667,7 +600,7 @@ h1{
 }
 
 .txtwhite{
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   text-align: left;
 }
@@ -675,7 +608,8 @@ h1{
 h1{
 
   color: $yellowtext;
-  text-align: center;
+  text-align: left;
+  font-size: 30;
 }
 
 .video1{
@@ -725,7 +659,7 @@ height: 260px;
 
 @media (min-width:  769px) {
 
-.header,.body3article, footer,.seafloortextmobile {
+.header,.body3article, .seafloortextmobile {
   display: none;
 }
 
@@ -761,26 +695,29 @@ a {
   }
 }
 
-#body1articledesktop{
-
-  width: 100%;
-  height: 675px;
-  display: flex;
-  flex-direction: column;
-  background-image: url(../img/habitats-desktop.jpg);
-  background-size: cover;
-  background-position: 10% 60%;
-
-      .seafloortext{
-          color: $yellowtext;
-          text-align: center;
-          font-size: 39px;
-          font-weight: 900;
-          font-style: oblique;
-          
-      }
+#fishbackground1{
+  background-image: none;
 }
 
+
+.body1food{
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  width: 100vw;
+  height:100vh;
+}
+
+.body1food::before {
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/Pteropoda.jpg");
+  background-size: cover;
+  background-position: 10% 10%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+}
 
 li{
 
@@ -845,7 +782,7 @@ li{
 
   display: block;
   color: $yellowtext;
-  text-align: center;
+  text-align: left;
   font-size: 31px;
   font-weight: 600;
   margin-top: 130px;
@@ -858,16 +795,26 @@ li{
   display: flex;
   flex-direction: column;
   background-color: $desktopbackgroundcolor;
+  z-index: 2;
+  position: relative;
 }
 
 .bodydesktopmenu1stline{
   display: flex;
   margin-top: 110px;
-  padding-left: 155px;
+  padding-left: 95px;
   padding-right: 155px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 
+}
+.bodydesktopmenu2stline{
+  display: flex;
+
+  padding-left: 95px;
+  padding-right: 155px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
 
 }
 
@@ -875,6 +822,7 @@ li{
   flex: 1;
   align-self: center;
   padding: 20px;
+  padding-top:60px;
   border: 2px solid $dekstoptextcolor;
   width: 47vh;
   height: 45vh;
@@ -883,6 +831,7 @@ li{
  .txtwhite{
   font-size: 28px;
   text-align: left;
+  font-weight: 100;
 
  }
 
@@ -898,19 +847,22 @@ li{
 .articleimagedesktoptext88{
   flex: 1;
   padding: 20px;
-  width: 47vh;
-  height: 45vh;
+  width: 300px;
+  height: 80vh;
   margin-right: 10%;
   margin-bottom: 15%;
+  
 
   .picturein3{
-    width: 100%;
+    width: 600px;
     height: 100%;
+    margin-top: 130px;
   }
 
  .txtwhite{
   font-size: 28px;
   text-align: left;
+  
 
  }
 
@@ -923,7 +875,12 @@ width: 50vh;
 height: 50vh;
 
 
+.txtwhite1{
+  font-size: 28px;
+  text-align: left;
+  color: #F1DAC4;
 
+}
 
 
 
