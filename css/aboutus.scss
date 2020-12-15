@@ -370,6 +370,7 @@ footer{
     flex-direction: column;
     align-items: center;
     background-color: $articlebackground;
+    padding-bottom: 30px;
 
     .articletext1{
     padding-left: 31px;
@@ -638,7 +639,7 @@ h1{
 
   list-style: none;
   color: $yellowtext;
-  text-align: left;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -694,7 +695,14 @@ height: 260px;
     animation: shine 2.5s infinite;
   }
   
-  
+  .listofmembers{
+
+    list-style: none;
+    color: $yellowtext;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
   
 .body1food{
   background-image: none;
@@ -1057,3 +1065,16 @@ height: 260px;
 
 
 }
+
+.bodymobilesection1img{
+
+  width: 100%;
+
+
+}
+
+.image111{
+  height: 250px;
+  width: 100%;
+}
+

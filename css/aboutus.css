@@ -425,6 +425,7 @@ footer #fotspan {
       -ms-flex-align: center;
           align-items: center;
   background-color: #0D0C1D;
+  padding-bottom: 30px;
 }
 
 .body3article .articletext1 {
@@ -697,7 +698,7 @@ h1 {
 .listofmembers {
   list-style: none;
   color: #F1DAC4;
-  text-align: left;
+  text-align: center;
   padding: 0;
   margin: 0;
 }
@@ -742,6 +743,13 @@ h1 {
     -webkit-mask-size: 200%;
     -webkit-animation: shine 2.5s infinite;
             animation: shine 2.5s infinite;
+  }
+  body .listofmembers {
+    list-style: none;
+    color: #F1DAC4;
+    text-align: left;
+    padding: 0;
+    margin: 0;
   }
   body .body1food {
     background-image: none;
@@ -1014,5 +1022,14 @@ h1 {
     font-size: 39px;
     font-weight: 900;
   }
+}
+
+.bodymobilesection1img {
+  width: 100%;
+}
+
+.image111 {
+  height: 250px;
+  width: 100%;
 }
 /*# sourceMappingURL=aboutus.css.map */
