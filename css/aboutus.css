@@ -63,7 +63,7 @@ body {
 .header .menumain h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -361,7 +361,8 @@ body {
   color: #F1DAC4;
   text-align: center;
   font-size: 39px;
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .body2article {
@@ -459,7 +460,7 @@ footer #fotspan {
 }
 
 .txtwhite {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   text-align: left;
 }
@@ -487,7 +488,7 @@ h1 {
 /*FOODS BEGINS*/
 .body1food {
   width: 100%;
-  height: 675px;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,7 +496,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../img/foodbackground.jpg);
+  background-image: url(../img/blurred-aboutus.png);
   background-size: cover;
   background-position: 20% 90%;
 }
@@ -504,8 +505,9 @@ h1 {
   color: #F1DAC4;
   text-align: center;
   font-size: 39px;
-  font-weight: 800;
-  padding-top: 70%;
+  font-weight: 900;
+  padding-top: 80%;
+  letter-spacing: 0.1em;
 }
 
 .body1zones {
@@ -675,7 +677,7 @@ h1 {
 }
 
 .txtwhite {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   text-align: left;
 }
@@ -695,7 +697,7 @@ h1 {
 .listofmembers {
   list-style: none;
   color: #F1DAC4;
-  text-align: center;
+  text-align: left;
   padding: 0;
   margin: 0;
 }
@@ -723,11 +725,26 @@ h1 {
     color: #F1DAC4;
     text-decoration: none;
   }
-  .menuhover:hover {
+  html {
+    overflow: hidden;
+  }
+  body {
+    height: 100vh;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  body .menuhover:hover {
     -webkit-mask-image: linear-gradient(-75deg, rgba(105, 23, 23, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
     -webkit-mask-size: 200%;
     -webkit-animation: shine 2.5s infinite;
             animation: shine 2.5s infinite;
+  }
+  body .body1food {
+    background-image: none;
   }
   @-webkit-keyframes shine {
     from {
@@ -737,18 +754,54 @@ h1 {
       -webkit-mask-position: -50%;
     }
   }
-  li {
+  body .body1food {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+  }
+  body .body1food .seafloortext {
+    color: #F1DAC4;
+    text-align: center;
+    font-size: 39px;
+    font-weight: 900;
+    padding-top: 80%;
+    letter-spacing: 0.1em;
+  }
+  body .body1food::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image: url("../img/blurred-aboutus.png");
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
+  body li {
     list-style-type: none;
     margin-left: 30px;
   }
-  .headerdesktop {
+  body .headerdesktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .logodekstop {
+  body .logodekstop {
     width: 45px;
     height: 40px;
     -webkit-box-flex: 1;
@@ -756,7 +809,7 @@ h1 {
             flex-grow: 1;
     text-align: center;
   }
-  .menudekstop {
+  body .menudekstop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -767,7 +820,7 @@ h1 {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  .menudekstop2 {
+  body .menudekstop2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -778,7 +831,7 @@ h1 {
         align-self: center;
     margin-right: 5%;
   }
-  .aboutustitledesktop {
+  body .aboutustitledesktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -786,15 +839,16 @@ h1 {
     padding-top: 85px;
     padding-bottom: 50px;
   }
-  .subtextsuste {
+  body .subtextsuste {
     display: block;
     color: #F1DAC4;
     text-align: center;
     font-size: 31px;
     font-weight: 600;
-    margin-top: 170px;
+    margin-top: 270px;
+    letter-spacing: 0.1em;
   }
-  .bodydesktop {
+  body .bodydesktop {
     background-color: #0D0C1D;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -805,8 +859,11 @@ h1 {
             flex-direction: column;
     padding-left: 92px;
     padding-right: 92px;
+    z-index: 2;
+    position: relative;
+    padding-top: 200px;
   }
-  .bodydesktop .bodydesktopsection1 {
+  body .bodydesktop .bodydesktopsection1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -815,7 +872,7 @@ h1 {
             justify-content: space-between;
     margin-bottom: 205px;
   }
-  .bodydesktop .bodydesktopsection1text {
+  body .bodydesktop .bodydesktopsection1text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -823,26 +880,26 @@ h1 {
     height: 22%;
     margin-top: 50px;
   }
-  .bodydesktop .bodydesktopsection1text h1 {
-    font-size: 3em;
+  body .bodydesktop .bodydesktopsection1text h1 {
+    font-size: 2em;
     text-align: left;
   }
-  .bodydesktop .spacer {
+  body .bodydesktop .spacer {
     width: 30vh;
     height: 393px;
   }
-  .bodydesktop .bodydesktopsection1img {
+  body .bodydesktop .bodydesktopsection1img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  .bodydesktop .image11 {
+  body .bodydesktop .image11 {
     width: 100%;
     height: 100%;
   }
-  .bodydesktop .bodydesktopsection2 {
+  body .bodydesktop .bodydesktopsection2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -851,34 +908,33 @@ h1 {
             justify-content: space-between;
     margin-bottom: 205px;
   }
-  .bodydesktop .bodydesktopsection2text {
+  body .bodydesktop .bodydesktopsection2text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 22%;
     height: 22%;
-    margin-top: 50px;
   }
-  .bodydesktop .bodydesktopsection2text h1 {
-    font-size: 3em;
+  body .bodydesktop .bodydesktopsection2text h1 {
+    font-size: 2em;
     text-align: left;
   }
-  .bodydesktop .spacer2 {
+  body .bodydesktop .spacer2 {
     width: 30vh;
     height: 393px;
   }
-  .bodydesktop .bodydesktopsection2img {
+  body .bodydesktop .bodydesktopsection2img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  .bodydesktop .image22 {
+  body .bodydesktop .image22 {
     width: 100%;
     height: 100%;
   }
-  .bodydesktop .bodydesktopsection3 {
+  body .bodydesktop .bodydesktopsection3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -887,7 +943,7 @@ h1 {
             justify-content: space-between;
     margin-bottom: 205px;
   }
-  .bodydesktop .bodydesktopsection3text {
+  body .bodydesktop .bodydesktopsection3text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -895,82 +951,68 @@ h1 {
     height: 22%;
     margin-top: 50px;
   }
-  .bodydesktop .bodydesktopsection3text h1 {
-    font-size: 3em;
+  body .bodydesktop .bodydesktopsection3text h1 {
+    font-size: 2em;
     text-align: left;
   }
-  .bodydesktop .spacer3 {
+  body .bodydesktop .spacer3 {
     width: 30vh;
     height: 393px;
   }
-  .bodydesktop .bodydesktopsection3img {
+  body .bodydesktop .bodydesktopsection3img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  .bodydesktop .image33 {
+  body .bodydesktop .image33 {
     width: 100%;
     height: 100%;
   }
-  .bodydesktop .bodydesktopsection4 {
+  body .bodydesktop .bodydesktopsection4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 205px;
+    margin-bottom: 100px;
   }
-  .bodydesktop .bodydesktopsection4text {
+  body .bodydesktop .bodydesktopsection4text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 22%;
     height: 22%;
-    margin-top: 50px;
   }
-  .bodydesktop .bodydesktopsection4text h1 {
-    font-size: 3em;
+  body .bodydesktop .bodydesktopsection4text h1 {
+    font-size: 2em;
     text-align: left;
   }
-  .bodydesktop .spacer4 {
+  body .bodydesktop .spacer4 {
     width: 30vh;
     height: 393px;
   }
-  .bodydesktop .bodydesktopsection4img {
+  body .bodydesktop .bodydesktopsection4img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  .bodydesktop .image44 {
+  body .bodydesktop .image44 {
     width: 100%;
     height: 100%;
   }
-  .seafloortext {
+  body .seafloortext {
     display: none;
   }
-  .foodtext {
+  body .foodtext {
     color: #F1DAC4;
     text-align: center;
     font-size: 39px;
-    font-weight: 800;
-  }
-  .footoerdesktop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    border-line: 3px palegoldenrod;
-    border-top: 5px solid #F1DAC4;
-  }
-  .socioltext {
-    color: #F1DAC4;
+    font-weight: 900;
   }
 }
 /*# sourceMappingURL=aboutus.css.map */
