@@ -415,6 +415,12 @@ html {
 
   
 }
+.itemarticleANG{
+
+  width: 100%;
+  height: 300px;
+
+}
 
 .itemarticle4ISOPOD{
   width: 100%;
@@ -566,6 +572,13 @@ h1{
   height: 100vh;
 }
 
+#fishbackground1ANG{
+  background-image: url(../img/homepageimg4.jpg);
+  background-size: cover;
+  background-position: 5% 1%;
+  height: 100vh;
+}
+
 .seafloortextmobileCRAB{
   color: $yellowtext;
   text-align: center;
@@ -613,6 +626,16 @@ h1{
 
 .seafloortextmobileFIRE{
 
+  color: $yellowtext;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 585px;
+  letter-spacing: 0.1em;
+}
+
+.seafloortextmobileANG{
   color: $yellowtext;
   text-align: center;
   font-size: 39px;
@@ -679,7 +702,7 @@ h1{
   }
 
   .itemarticle4{
-    width: 95%;
+    width: 100%;
     height: 319px;
     background-size: cover;
 
@@ -809,6 +832,11 @@ height: 260px;
 .subtextFIRE{
   display: none;
 }
+.subtextANG{
+
+  display: none;
+
+}
 
 /*DESKTOP CODE*/
 
@@ -844,6 +872,10 @@ a {
 }
 
 .seafloortextmobileFIRE{
+  display: none;
+}
+
+.seafloortextmobileANG{
   display: none;
 }
 
@@ -888,6 +920,9 @@ a {
   background-image: none;
 }
 
+#fishbackground1ANG{
+  background-image: none;
+}
 
 
 
@@ -946,6 +981,26 @@ a {
   background-image: url("../img/DiPOUlwUwAE9VNW.jpg");
   background-size: cover;
   background-position: 10% 10%;
+  position: absolute;
+  z-index: -1;
+  transform:translateZ(-1px) scale(2);
+
+}
+
+.body1ANG{
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  width: 100vw;
+  height:100vh;
+}
+
+.body1ANG::before{
+  content:"";
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/homepageimg4.jpg");
+  background-size: cover;
+  background-position: 10% 5%;
   position: absolute;
   z-index: -1;
   transform:translateZ(-1px) scale(2);
@@ -1125,6 +1180,19 @@ li{
   margin-left: 7%;
   margin-right: 70%;
   
+}
+
+.subtextANG{
+  display: block;
+  color: $yellowtext;
+  text-align: left;
+  font-size: 31px;
+  font-weight: 600;
+  margin-top: 13px;
+  margin-left: 71%;
+  margin-right: 6%;
+  
+
 }
 
 .subtextFIRE{

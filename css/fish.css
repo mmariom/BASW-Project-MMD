@@ -455,6 +455,11 @@ html {
   background-size: cover;
 }
 
+.itemarticleANG {
+  width: 100%;
+  height: 300px;
+}
+
 .itemarticle4ISOPOD {
   width: 100%;
   height: 90%;
@@ -585,6 +590,13 @@ h1 {
   height: 100vh;
 }
 
+#fishbackground1ANG {
+  background-image: url(../img/homepageimg4.jpg);
+  background-size: cover;
+  background-position: 5% 1%;
+  height: 100vh;
+}
+
 .seafloortextmobileCRAB {
   color: #F1DAC4;
   text-align: center;
@@ -626,6 +638,16 @@ h1 {
 }
 
 .seafloortextmobileFIRE {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 585px;
+  letter-spacing: 0.1em;
+}
+
+.seafloortextmobileANG {
   color: #F1DAC4;
   text-align: center;
   font-size: 39px;
@@ -692,7 +714,7 @@ h1 {
 }
 
 .body3article .itemarticle4 {
-  width: 95%;
+  width: 100%;
   height: 319px;
   background-size: cover;
 }
@@ -836,6 +858,10 @@ h1 {
   display: none;
 }
 
+.subtextANG {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
   .header, .body3article, .seafloortextmobile {
@@ -861,6 +887,9 @@ h1 {
     display: none;
   }
   .seafloortextmobileFIRE {
+    display: none;
+  }
+  .seafloortextmobileANG {
     display: none;
   }
   .menuhover:hover {
@@ -893,6 +922,9 @@ h1 {
     background-image: none;
   }
   #fishbackground1FIRE {
+    background-image: none;
+  }
+  #fishbackground1ANG {
     background-image: none;
   }
   .body1food {
@@ -950,6 +982,26 @@ h1 {
     background-image: url("../img/DiPOUlwUwAE9VNW.jpg");
     background-size: cover;
     background-position: 10% 10%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
+  .body1ANG {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 100vw;
+    height: 100vh;
+  }
+  .body1ANG::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/homepageimg4.jpg");
+    background-size: cover;
+    background-position: 10% 5%;
     position: absolute;
     z-index: -1;
     -webkit-transform: translateZ(-1px) scale(2);
@@ -1100,6 +1152,16 @@ h1 {
     margin-top: 30px;
     margin-left: 7%;
     margin-right: 70%;
+  }
+  .subtextANG {
+    display: block;
+    color: #F1DAC4;
+    text-align: left;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 13px;
+    margin-left: 71%;
+    margin-right: 6%;
   }
   .subtextFIRE {
     display: block;
