@@ -15,15 +15,7 @@ body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x:hidden;
-    overflow-y:auto;
-   
-
-}
-html {
-  overflow: hidden;
+  
 }
 
 
@@ -267,10 +259,11 @@ html {
         flex: 2;
         text-align: center;
             #logo{
-                width: 45px;
-                height: 40px;
-                padding-top: 10px;
-            }
+              width: 35px;
+              height: 30px;
+              padding-top: 10px;
+              padding-right: 30px;
+          }
       
    
     }
@@ -283,9 +276,10 @@ html {
 
 
     #logoham{
-        width: 135px;
-        height: 120px;
-    }
+      width: 135px;
+      height: 120px;
+      padding-right: 30px;
+  }
     
 
 
@@ -942,6 +936,20 @@ height: 260px;
 
 
 @media (min-width:  769px) {
+
+  html {
+    overflow: hidden;
+}
+  
+body{
+   
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x:hidden;
+  overflow-y:auto;
+
+}
 
 .header,.body3article, .seafloortextmobile {
   display: none;

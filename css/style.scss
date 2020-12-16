@@ -14,16 +14,10 @@ body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x:hidden;
-    overflow-y:auto;
-
+  
 }
 
-html {
-  overflow: hidden;
-}
+
 /*HEADER STARTS*/
 
 .header{
@@ -264,9 +258,10 @@ html {
         flex: 2;
         text-align: center;
             #logo{
-                width: 45px;
-                height: 40px;
+                width: 35px;
+                height: 30px;
                 padding-top: 10px;
+                padding-right: 30px;
             }
       
    
@@ -282,6 +277,7 @@ html {
     #logoham{
         width: 135px;
         height: 120px;
+        padding-right: 30px;
     }
     
 
@@ -486,6 +482,22 @@ boxhightlight*/
 
 
 @media (min-width:  769px) {
+
+
+
+  body{
+   
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+
+}
+
+html{
+  overflow: hidden;
+}
 
 .header{
   display: none;

@@ -3,16 +3,6 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-html {
-  overflow: hidden;
 }
 
 /*HEADER STARTS*/
@@ -328,9 +318,10 @@ html {
 }
 
 .header .logo #logo {
-  width: 45px;
-  height: 40px;
+  width: 35px;
+  height: 30px;
   padding-top: 10px;
+  padding-right: 30px;
 }
 
 .header .extension {
@@ -346,6 +337,7 @@ html {
 .header #logoham {
   width: 135px;
   height: 120px;
+  padding-right: 30px;
 }
 
 /*HEADER ENDS*/
@@ -538,6 +530,18 @@ boxhightlight*/
 
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
+  body {
+    height: 100vh;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  html {
+    overflow: hidden;
+  }
   .header {
     display: none;
   }

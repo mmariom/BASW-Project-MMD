@@ -14,8 +14,6 @@ body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
 
-   
-
 }
 
 
@@ -259,10 +257,11 @@ body{
         flex: 2;
         text-align: center;
             #logo{
-                width: 45px;
-                height: 40px;
-                padding-top: 10px;
-            }
+              width: 35px;
+              height: 30px;
+              padding-top: 10px;
+              padding-right: 30px;
+          }
       
    
     }
@@ -275,9 +274,10 @@ body{
 
 
     #logoham{
-        width: 135px;
-        height: 120px;
-    }
+      width: 135px;
+      height: 120px;
+      padding-right: 30px;
+  }
     
 
 
@@ -680,13 +680,20 @@ height: 260px;
   html {
     overflow: hidden;
 }
-  body {
+  
+body{
    
-    height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x:hidden;
-    overflow-y:auto;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x:hidden;
+  overflow-y:auto;
+
+}
+
+
+
+
 
   .menuhover:hover{
   
@@ -1064,7 +1071,7 @@ height: 260px;
 
 
 
-}
+
 
 .bodymobilesection1img{
 
