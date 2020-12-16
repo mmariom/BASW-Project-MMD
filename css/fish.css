@@ -461,6 +461,13 @@ html {
   background-size: cover;
 }
 
+.itemarticle4FIRE {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  margin-left: 80px;
+}
+
 .txtwhite {
   font-size: 18px;
   color: white;
@@ -523,6 +530,14 @@ h1 {
   letter-spacing: 0.1em;
 }
 
+.foodtextFIRE {
+  color: #F1DAC4;
+  text-align: left;
+  font-size: 37px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
 #fishbackground1 {
   background-image: url(../img/Pteropoda.jpg);
   background-size: cover;
@@ -563,6 +578,13 @@ h1 {
   background-position: 10% 15%;
 }
 
+#fishbackground1FIRE {
+  background-image: url(../img/homepageimg3.jpg);
+  background-size: cover;
+  background-position: 40% 30%;
+  height: 100vh;
+}
+
 .seafloortextmobileCRAB {
   color: #F1DAC4;
   text-align: center;
@@ -600,6 +622,16 @@ h1 {
   font-weight: 900;
   font-style: normal;
   padding-top: 600px;
+  letter-spacing: 0.1em;
+}
+
+.seafloortextmobileFIRE {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 585px;
   letter-spacing: 0.1em;
 }
 
@@ -800,6 +832,10 @@ h1 {
   display: none;
 }
 
+.subtextFIRE {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
   .header, .body3article, .seafloortextmobile {
@@ -824,6 +860,9 @@ h1 {
   .seafloortextmobileBARR {
     display: none;
   }
+  .seafloortextmobileFIRE {
+    display: none;
+  }
   .menuhover:hover {
     -webkit-mask-image: linear-gradient(-75deg, rgba(105, 23, 23, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
     -webkit-mask-size: 200%;
@@ -842,6 +881,18 @@ h1 {
     background-image: none;
   }
   #fishbackgroundISOPOD {
+    background-image: none;
+  }
+  #fishbackground1VAMP {
+    background-image: none;
+  }
+  #fishbackgroundBARR {
+    background-image: none;
+  }
+  #fishbackgroundCRAB {
+    background-image: none;
+  }
+  #fishbackground1FIRE {
     background-image: none;
   }
   .body1food {
@@ -872,7 +923,7 @@ h1 {
     width: 100vw;
     height: 100vh;
   }
-  .body1VAMP:before {
+  .body1VAMP::before {
     content: "";
     width: 100vw;
     height: 100vh;
@@ -892,7 +943,7 @@ h1 {
     width: 100vw;
     height: 100vh;
   }
-  .body1ISOPOD:before {
+  .body1ISOPOD::before {
     content: "";
     width: 100vw;
     height: 100vh;
@@ -912,7 +963,7 @@ h1 {
     width: 100vw;
     height: 100vh;
   }
-  .body1BARR:before {
+  .body1BARR::before {
     content: "";
     width: 100vw;
     height: 100vh;
@@ -932,13 +983,33 @@ h1 {
     width: 100vw;
     height: 100vh;
   }
-  .body1CRAB:before {
+  .body1CRAB::before {
     content: "";
     width: 100vw;
     height: 100vh;
     background-image: url("../img/homepageimg2.jpg");
     background-size: cover;
     background-position: 10% 60%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
+  .body1FIRE {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 100vw;
+    height: 100vh;
+  }
+  .body1FIRE::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/homepageimg3.jpg");
+    background-size: cover;
+    background-position: 10% 50%;
     position: absolute;
     z-index: -1;
     -webkit-transform: translateZ(-1px) scale(2);
@@ -1030,6 +1101,16 @@ h1 {
     margin-left: 7%;
     margin-right: 70%;
   }
+  .subtextFIRE {
+    display: block;
+    color: #F1DAC4;
+    text-align: left;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 330px;
+    margin-left: 70%;
+    margin-right: 10%;
+  }
   .subtextVAMP {
     display: block;
     color: #F1DAC4;
@@ -1118,6 +1199,12 @@ h1 {
     font-weight: 100;
     color: white;
   }
+  .articleimagedesktoptext .txtwhiteFIRE {
+    font-size: 25px;
+    text-align: left;
+    font-weight: 100;
+    color: white;
+  }
   .articleimagedesktoptext h1 {
     text-align: left;
   }
@@ -1135,6 +1222,12 @@ h1 {
     width: 100%;
     height: 100%;
     margin-top: 130px;
+  }
+  .articleimagedesktoptext88 .pictureinFIRE {
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+    margin-left: 130px;
   }
   .articleimagedesktoptext88 .picturein3BARR {
     width: 100%;
