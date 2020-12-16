@@ -473,6 +473,14 @@ html {
   margin-left: 80px;
 }
 
+.itemarticle4FANG {
+  width: 80%;
+  height: 80%;
+  background-size: cover;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
 .txtwhite {
   font-size: 18px;
   color: white;
@@ -531,6 +539,14 @@ h1 {
   color: #F1DAC4;
   text-align: left;
   font-size: 39px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.foodtextFANG {
+  color: #F1DAC4;
+  text-align: left;
+  font-size: 34px;
   font-weight: 900;
   letter-spacing: 0.1em;
 }
@@ -597,6 +613,13 @@ h1 {
   height: 100vh;
 }
 
+#fishbackground1FANG {
+  background-image: url(../img/homepageimg14.jpg);
+  background-size: cover;
+  background-position: 80% 90%;
+  height: 100vh;
+}
+
 .seafloortextmobileCRAB {
   color: #F1DAC4;
   text-align: center;
@@ -655,6 +678,18 @@ h1 {
   font-style: normal;
   padding-top: 585px;
   letter-spacing: 0.1em;
+}
+
+.seafloortextmobileFANG {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 505px;
+  letter-spacing: 0.1em;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .seafloortextmobile {
@@ -862,6 +897,10 @@ h1 {
   display: none;
 }
 
+.subtextFANG {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
   .header, .body3article, .seafloortextmobile {
@@ -890,6 +929,9 @@ h1 {
     display: none;
   }
   .seafloortextmobileANG {
+    display: none;
+  }
+  .seafloortextmobileFANG {
     display: none;
   }
   .menuhover:hover {
@@ -927,6 +969,9 @@ h1 {
   #fishbackground1ANG {
     background-image: none;
   }
+  #fishbackground1FANG {
+    background-image: none;
+  }
   .body1food {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -962,6 +1007,26 @@ h1 {
     background-image: url("../img/notusedyet.jpg");
     background-size: cover;
     background-position: 10% 10%;
+    position: absolute;
+    z-index: -1;
+    -webkit-transform: translateZ(-1px) scale(2);
+            transform: translateZ(-1px) scale(2);
+  }
+  .body1FANG {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    width: 100vw;
+    height: 100vh;
+  }
+  .body1FANG::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/homepageimg14.jpg");
+    background-size: cover;
+    background-position: 20% 10%;
     position: absolute;
     z-index: -1;
     -webkit-transform: translateZ(-1px) scale(2);
@@ -1078,6 +1143,12 @@ h1 {
     text-align: left;
     color: white;
   }
+  .txtwhiteANG {
+    padding-top: 40px;
+    font-size: 24px;
+    text-align: left;
+    color: white;
+  }
   .articleimagedesktoptextCRAB {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1162,6 +1233,16 @@ h1 {
     margin-top: 13px;
     margin-left: 71%;
     margin-right: 6%;
+  }
+  .subtextFANG {
+    display: block;
+    color: #F1DAC4;
+    text-align: left;
+    font-size: 31px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 7%;
+    margin-right: 70%;
   }
   .subtextFIRE {
     display: block;
@@ -1300,6 +1381,11 @@ h1 {
     width: 600px;
     height: 100%;
     margin-top: 130px;
+  }
+  .articleimagedesktoptext88 .picturein3FANG {
+    width: 100%;
+    height: 50%;
+    margin-top: 200px;
   }
   .articleimagedesktoptext88 .txtwhite {
     font-size: 28px;
