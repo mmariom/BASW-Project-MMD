@@ -506,6 +506,14 @@ h1 {
   height: 260px;
 }
 
+.listofdonationsBAG {
+  list-style-type: none;
+  color: #F1DAC4;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
 /*BODY 3 end*/
 /*FOODS BEGINS*/
 .body1food {
@@ -628,6 +636,13 @@ h1 {
   height: 100vh;
 }
 
+#fishbackground1BAG {
+  background-image: url(../img/plasticbag.jpg);
+  background-size: cover;
+  background-position: 40% 50%;
+  height: 100vh;
+}
+
 .seafloortextmobileCRAB {
   color: #F1DAC4;
   text-align: center;
@@ -695,6 +710,18 @@ h1 {
   font-weight: 900;
   font-style: normal;
   padding-top: 505px;
+  letter-spacing: 0.1em;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.seafloortextmobileBAG {
+  color: #F1DAC4;
+  text-align: center;
+  font-size: 39px;
+  font-weight: 900;
+  font-style: normal;
+  padding-top: 305px;
   letter-spacing: 0.1em;
   padding-right: 5px;
   padding-left: 5px;
@@ -861,6 +888,15 @@ h1 {
   margin: 0;
 }
 
+li {
+  list-style-type: none;
+  margin-left: 30px;
+}
+
+.body3article {
+  padding-bottom: 20px;
+}
+
 .video2 {
   margin-top: 25px;
   margin-bottom: 60px;
@@ -909,6 +945,10 @@ h1 {
   display: none;
 }
 
+.subtextBAG {
+  display: none;
+}
+
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
   .header, .body3article, .seafloortextmobile {
@@ -942,6 +982,9 @@ h1 {
   .seafloortextmobileFANG {
     display: none;
   }
+  .seafloortextmobileBAG {
+    display: none;
+  }
   .menuhover:hover {
     -webkit-mask-image: linear-gradient(-75deg, rgba(105, 23, 23, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
     -webkit-mask-size: 200%;
@@ -955,6 +998,11 @@ h1 {
     to {
       -webkit-mask-position: -50%;
     }
+  }
+  .listofdonations {
+    text-align: left;
+    padding: 0;
+    margin: 0;
   }
   #fishbackground1 {
     background-image: none;
@@ -978,6 +1026,9 @@ h1 {
     background-image: none;
   }
   #fishbackground1FANG {
+    background-image: none;
+  }
+  #fishbackground1BAG {
     background-image: none;
   }
   .body1food {
