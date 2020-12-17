@@ -14,283 +14,277 @@ $dekstoptextcolor :#F1DAC4;
 body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
-
-  height: 100vh;
-  perspective: 1px;
-  transform-style: preserve-3d;
-  overflow-x:hidden;
-  overflow-y:auto;
-
-   
+    height: 100vh;
+    
 
 }
-html {
-  overflow: hidden;
-}
+
 
 /*HEADER STARTS*/
 
 .header{
 
-    background-color:   $maincolor; 
-    display: flex;
-    height: 62px ;
-    padding-left: 15px;
-    padding-right: 31px;
-    
-        /*Sticky header kod*/
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        width: 100%;
-        height: 50px;
-        
-        /*////Sticky header kod*/
-
-    
-
-    .menumain{
-        
-        color: white;
-        align-self: center;
-        flex: 1;
-     
-
-
-          .flex-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          * {
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 300;
-          }
-          a,
-          a:visited,
-          a:hover,
-          a:active {
-            color: inherit;
-            text-decoration: none;
-          }
-          h1 {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            font-size: 3em;
-            text-align: center;
-          }
-          .outer-menu {
-           
-            top: 10vh;
-            left: 0;
-            z-index: 1;
-          }
-          .outer-menu .checkbox-toggle {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 2;
+  background-color:   $maincolor; 
+  display: flex;
+  height: 62px ;
+  padding-left: 15px;
+  padding-right: 31px;
+  
+      /*Sticky header kod*/
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      width: 100%;
+      height: 50px;
       
-            cursor: pointer;
-            width: 60px;
-            height: 60px;
-            opacity: 0;
-         
-          }
-          .outer-menu .checkbox-toggle:checked + .hamburger > div {
-            -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-          }
-          .outer-menu .checkbox-toggle:checked + .hamburger > div:before,
-          .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-            top: 0;
-            -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-          }
-          .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
-            opacity: 0;
-          }
-          .outer-menu .checkbox-toggle:checked ~ .menu {
-            pointer-events: auto;
-            visibility: visible;
-          }
-          .outer-menu .checkbox-toggle:checked ~ .menu > div {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            transition-duration: 0.75s;
-          }
-          .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
-            opacity: 1;
-            transition: opacity 0.4s ease 0.4s;
-          }
-          
-          .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
-            -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
-          }
-          .outer-menu .hamburger {
-            position: absolute;
-            top: 0;
-            z-index: 1;
-            width: 60px;
-            height: 50px;
-            padding: 0.5em 1em;
-            border-radius: 0 0.12em 0.12em 0;
-            cursor: pointer;
-            transition: box-shadow 0.4s ease;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .outer-menu .hamburger > div {
-            position: relative;
-            flex: none;
-            width: 100%;
-            height: 2px;
-            background: $hamburgercolor;
-            transition: all 0.4s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .outer-menu .hamburger > div:before,
-          .outer-menu .hamburger > div:after {
-            content: "";
-            position: absolute;
-            z-index: 1;
-            top: -10px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: inherit;
-            transition: all 0.4s ease;
-          }
-          .outer-menu .hamburger > div:after {
-            top: 10px;
-          }
-          .outer-menu .menu {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            visibility: hidden;
-            overflow: hidden;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            outline: 1px solid transparent;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .outer-menu .menu > div {
-            width: 200vw;
-            height: 200vw;
-            color: #fefefe;
-            background-image: url(../img/menu-backgroundblur.png);
-            background-size: cover;
-
-
-            border-radius: 50%;
-            transition: all 0.4s ease;
-            flex: none;
-            -webkit-transform: scale(0);
-            transform: scale(0);
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .outer-menu .menu > div > div {
-            text-align: center;
-            max-width: 90vw;
-            max-height: 100vh;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            overflow-y: auto;
-            flex: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .outer-menu .menu > div > div > ul {
-            list-style: none;
-            padding: 0 1em;
-            margin: 0;
-            display: block;
-            max-height: 100vh;
-          }
-          .outer-menu .menu > div > div > ul > li {
-            padding: 0;
-            margin: 1em;
-            font-size: 24px;
-            display: block;
-          }
-          .outer-menu .menu > div > div > ul > li > a {
-            position: relative;
-            display: inline;
-            cursor: pointer;
-            transition: color 0.4s ease;
-          }
-          .outer-menu .menu > div > div > ul > li > a:hover {
-            color: $hamburgercolor;
-          }
-          .outer-menu .menu > div > div > ul > li > a:hover:after {
-            width: 100%;
-          }
-          .outer-menu .menu > div > div > ul > li > a:after {
-            content: "";
-            position: absolute;
-            z-index: 1;
-            bottom: -0.15em;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: $hamburgercolor;
-            transition: width 0.4s ease;
-          }
-       
-       
-    }
-
-
-    .logo{
-
-        color: white;
-        align-self: center;
-        flex: 2;
-        text-align: center;
-            #logo{
-                width: 45px;
-                height: 40px;
-                padding-top: 10px;
-            }
-      
-   
-    }
-
-    .extension{
-        background-color: rgb(152, 40, 40);
-        align-self: center;
-        flex: 1;
-    }
-
-
-    #logoham{
-        width: 135px;
-        height: 120px;
-    }
-    
-
+      /*////Sticky header kod*/
 
   
+
+  .menumain{
+      
+      color: white;
+      align-self: center;
+      flex: 1;
+   
+
+
+        .flex-center {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        * {
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 300;
+        }
+        a,
+        a:visited,
+        a:hover,
+        a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+        h1 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 2em;
+          text-align: center;
+        }
+        .outer-menu {
+         
+          top: 10vh;
+          left: 0;
+          z-index: 1;
+        }
+        .outer-menu .checkbox-toggle {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+    
+          cursor: pointer;
+          width: 60px;
+          height: 60px;
+          opacity: 0;
+       
+        }
+        .outer-menu .checkbox-toggle:checked + .hamburger > div {
+          -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+        }
+        .outer-menu .checkbox-toggle:checked + .hamburger > div:before,
+        .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+          top: 0;
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+        .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+          opacity: 0;
+        }
+        .outer-menu .checkbox-toggle:checked ~ .menu {
+          pointer-events: auto;
+          visibility: visible;
+        }
+        .outer-menu .checkbox-toggle:checked ~ .menu > div {
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          transition-duration: 0.75s;
+        }
+        .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+          opacity: 1;
+          transition: opacity 0.4s ease 0.4s;
+        }
+        
+        .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+          -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+        }
+        .outer-menu .hamburger {
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          width: 60px;
+          height: 50px;
+          padding: 0.5em 1em;
+          border-radius: 0 0.12em 0.12em 0;
+          cursor: pointer;
+          transition: box-shadow 0.4s ease;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .outer-menu .hamburger > div {
+          position: relative;
+          flex: none;
+          width: 100%;
+          height: 2px;
+          background: $hamburgercolor;
+          transition: all 0.4s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .outer-menu .hamburger > div:before,
+        .outer-menu .hamburger > div:after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: -10px;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background: inherit;
+          transition: all 0.4s ease;
+        }
+        .outer-menu .hamburger > div:after {
+          top: 10px;
+        }
+        .outer-menu .menu {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          visibility: hidden;
+          overflow: hidden;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          outline: 1px solid transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .outer-menu .menu > div {
+          width: 200vw;
+          height: 200vw;
+          color: #fefefe;
+          background-image: url(../img/menu-backgroundblur.png);
+          background-size: cover;
+
+
+          border-radius: 50%;
+          transition: all 0.4s ease;
+          flex: none;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .outer-menu .menu > div > div {
+          text-align: center;
+          max-width: 90vw;
+          max-height: 100vh;
+          opacity: 0;
+          transition: opacity 0.4s ease;
+          overflow-y: auto;
+          flex: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .outer-menu .menu > div > div > ul {
+          list-style: none;
+          padding: 0 1em;
+          margin: 0;
+          display: block;
+          max-height: 100vh;
+        }
+        .outer-menu .menu > div > div > ul > li {
+          padding: 0;
+          margin: 1em;
+          font-size: 24px;
+          display: block;
+        }
+        .outer-menu .menu > div > div > ul > li > a {
+          position: relative;
+          display: inline;
+          cursor: pointer;
+          transition: color 0.4s ease;
+        }
+        .outer-menu .menu > div > div > ul > li > a:hover {
+          color: $hamburgercolor;
+        }
+        .outer-menu .menu > div > div > ul > li > a:hover:after {
+          width: 100%;
+        }
+        .outer-menu .menu > div > div > ul > li > a:after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          bottom: -0.15em;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: $hamburgercolor;
+          transition: width 0.4s ease;
+        }
+     
+     
+  }
+
+
+  .logo{
+
+      color: white;
+      align-self: center;
+      flex: 2;
+      text-align: center;
+          #logo{
+            width: 35px;
+            height: 30px;
+            padding-top: 10px;
+            padding-right: 30px;
+        }
+    
+ 
+  }
+
+  .extension{
+      background-color: rgb(152, 40, 40);
+      align-self: center;
+      flex: 1;
+  }
+
+
+  #logoham{
+    width: 135px;
+    height: 120px;
+    padding-right: 30px;
+}
+  
+
+
+
 
 }
 
@@ -685,7 +679,7 @@ h1{
 }
 
 .itemarticle4box-1{
-  background-image: url(../img/tmpnull.gif);
+  background-image: url(../img/1785744_orig.jpg);
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
@@ -785,7 +779,19 @@ p{
 
 @media (min-width:  769px) {
 
-  
+  body{
+   
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+
+}
+
+html{
+  overflow: hidden;
+}
 
 .header,.body3article
 ,.seafloortextmobile,.subtextfood,.white-subtext-food,.body2prespeach,.mobile-zone {

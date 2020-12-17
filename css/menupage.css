@@ -3,16 +3,6 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-html {
-  overflow: hidden;
 }
 
 /*HEADER STARTS*/
@@ -74,7 +64,7 @@ html {
 .header .menumain h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -328,9 +318,10 @@ html {
 }
 
 .header .logo #logo {
-  width: 45px;
-  height: 40px;
+  width: 35px;
+  height: 30px;
   padding-top: 10px;
+  padding-right: 30px;
 }
 
 .header .extension {
@@ -346,6 +337,7 @@ html {
 .header #logoham {
   width: 135px;
   height: 120px;
+  padding-right: 30px;
 }
 
 /*HEADER ENDS*/
@@ -715,7 +707,7 @@ h1 {
 }
 
 .body3article .itemarticle4box-1 {
-  background-image: url(../img/tmpnull.gif);
+  background-image: url(../img/1785744_orig.jpg);
   background-size: cover;
   background-position: 50% 50%;
   width: 100%;
@@ -806,6 +798,18 @@ p {
 
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
+  body {
+    height: 100vh;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  html {
+    overflow: hidden;
+  }
   .header, .body3article
 , .seafloortextmobile, .subtextfood, .white-subtext-food, .body2prespeach, .mobile-zone {
     display: none;

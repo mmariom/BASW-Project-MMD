@@ -3,16 +3,6 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   height: 100vh;
-  -webkit-perspective: 1px;
-          perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-
-html {
-  overflow: hidden;
 }
 
 /*HEADER STARTS*/
@@ -328,9 +318,10 @@ html {
 }
 
 .header .logo #logo {
-  width: 45px;
-  height: 40px;
+  width: 35px;
+  height: 30px;
   padding-top: 10px;
+  padding-right: 30px;
 }
 
 .header .extension {
@@ -346,6 +337,7 @@ html {
 .header #logoham {
   width: 135px;
   height: 120px;
+  padding-right: 30px;
 }
 
 /*HEADER ENDS*/
@@ -353,7 +345,7 @@ html {
 .body1 {
   background-image: url(../img/ilustrejszynFinished.png);
   background-size: cover;
-  background-position: 60%;
+  background-position: 50% 10%;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -375,6 +367,7 @@ html {
   padding-left: 30px;
   padding-right: 30px;
   font-weight: 900;
+  text-shadow: 2px 2px 1px black;
 }
 
 .body1 .body1text2 {
@@ -384,6 +377,7 @@ html {
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 30px;
+  text-shadow: 2px 2px 1px black;
 }
 
 .textonhomepagedesk {
@@ -536,6 +530,18 @@ boxhightlight*/
 
 /*DESKTOP CODE*/
 @media (min-width: 769px) {
+  body {
+    height: 100vh;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  html {
+    overflow: hidden;
+  }
   .header {
     display: none;
   }
@@ -598,6 +604,7 @@ boxhightlight*/
     left: 0;
     background-image: url("../img/ilustrejszynFinished.png");
     background-position: 50% 50%;
+    background-size: cover;
     position: absolute;
     z-index: -1;
     -webkit-transform: translateZ(-1px) scale(2);

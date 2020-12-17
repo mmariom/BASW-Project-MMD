@@ -14,16 +14,10 @@ body{
     margin:  0 ;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x:hidden;
-    overflow-y:auto;
-
+  
 }
 
-html {
-  overflow: hidden;
-}
+
 /*HEADER STARTS*/
 
 .header{
@@ -264,9 +258,10 @@ html {
         flex: 2;
         text-align: center;
             #logo{
-                width: 45px;
-                height: 40px;
+                width: 35px;
+                height: 30px;
                 padding-top: 10px;
+                padding-right: 30px;
             }
       
    
@@ -282,6 +277,7 @@ html {
     #logoham{
         width: 135px;
         height: 120px;
+        padding-right: 30px;
     }
     
 
@@ -295,8 +291,8 @@ html {
 
 
     background-image: url(../img/ilustrejszynFinished.png);
-    background-size:cover;
-    background-position: 60%  ; 
+    background-size: cover;
+    background-position: 50% 10%; 
     width: 100%;
     height: 100vh;
     display: flex;
@@ -314,6 +310,7 @@ html {
             padding-left: 30px;
             padding-right:30px;
             font-weight: 900;
+            text-shadow: 2px 2px 1px black;
            
             
   
@@ -327,6 +324,7 @@ html {
             padding-left: 30px;
             padding-right:30px;
             margin-top: 30px;
+            text-shadow: 2px 2px 1px black;
            
         }
 }
@@ -485,6 +483,22 @@ boxhightlight*/
 
 @media (min-width:  769px) {
 
+
+
+  body{
+   
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+
+}
+
+html{
+  overflow: hidden;
+}
+
 .header{
   display: none;
 }
@@ -571,6 +585,7 @@ li{
   left:0;
   background-image: url("../img/ilustrejszynFinished.png");
   background-position: 50% 50%;
+  background-size: cover;
   position: absolute;
   z-index: -1;
   transform:translateZ(-1px) scale(2);
@@ -583,6 +598,8 @@ li{
   flex-direction: column;
   justify-content: flex-start;
   width: 100vw;
+
+  
 
 
   .textonhomepagedesk{

@@ -317,9 +317,10 @@ body {
 }
 
 .header .logo #logo {
-  width: 45px;
-  height: 40px;
+  width: 35px;
+  height: 30px;
   padding-top: 10px;
+  padding-right: 30px;
 }
 
 .header .extension {
@@ -335,6 +336,7 @@ body {
 .header #logoham {
   width: 135px;
   height: 120px;
+  padding-right: 30px;
 }
 
 /*HEADER ENDS*/
@@ -738,20 +740,20 @@ h1 {
     overflow-x: hidden;
     overflow-y: auto;
   }
-  body .menuhover:hover {
+  .menuhover:hover {
     -webkit-mask-image: linear-gradient(-75deg, rgba(105, 23, 23, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
     -webkit-mask-size: 200%;
     -webkit-animation: shine 2.5s infinite;
             animation: shine 2.5s infinite;
   }
-  body .listofmembers {
+  .listofmembers {
     list-style: none;
     color: #F1DAC4;
     text-align: left;
     padding: 0;
     margin: 0;
   }
-  body .body1food {
+  .body1food {
     background-image: none;
   }
   @-webkit-keyframes shine {
@@ -762,7 +764,7 @@ h1 {
       -webkit-mask-position: -50%;
     }
   }
-  body .body1food {
+  .body1food {
     width: 100%;
     height: 100vh;
     display: -webkit-box;
@@ -777,7 +779,7 @@ h1 {
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
   }
-  body .body1food .seafloortext {
+  .body1food .seafloortext {
     color: #F1DAC4;
     text-align: center;
     font-size: 39px;
@@ -785,7 +787,7 @@ h1 {
     padding-top: 80%;
     letter-spacing: 0.1em;
   }
-  body .body1food::before {
+  .body1food::before {
     content: "";
     width: 100vw;
     height: 100vh;
@@ -798,18 +800,18 @@ h1 {
     -webkit-transform: translateZ(-1px) scale(2);
             transform: translateZ(-1px) scale(2);
   }
-  body li {
+  li {
     list-style-type: none;
     margin-left: 30px;
   }
-  body .headerdesktop {
+  .headerdesktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  body .logodekstop {
+  .logodekstop {
     width: 45px;
     height: 40px;
     -webkit-box-flex: 1;
@@ -817,7 +819,7 @@ h1 {
             flex-grow: 1;
     text-align: center;
   }
-  body .menudekstop {
+  .menudekstop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -828,7 +830,7 @@ h1 {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  body .menudekstop2 {
+  .menudekstop2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -839,7 +841,7 @@ h1 {
         align-self: center;
     margin-right: 5%;
   }
-  body .aboutustitledesktop {
+  .aboutustitledesktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -847,7 +849,7 @@ h1 {
     padding-top: 85px;
     padding-bottom: 50px;
   }
-  body .subtextsuste {
+  .subtextsuste {
     display: block;
     color: #F1DAC4;
     text-align: center;
@@ -856,7 +858,7 @@ h1 {
     margin-top: 270px;
     letter-spacing: 0.1em;
   }
-  body .bodydesktop {
+  .bodydesktop {
     background-color: #0D0C1D;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -871,7 +873,7 @@ h1 {
     position: relative;
     padding-top: 200px;
   }
-  body .bodydesktop .bodydesktopsection1 {
+  .bodydesktop .bodydesktopsection1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -880,7 +882,7 @@ h1 {
             justify-content: space-between;
     margin-bottom: 205px;
   }
-  body .bodydesktop .bodydesktopsection1text {
+  .bodydesktop .bodydesktopsection1text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -888,26 +890,26 @@ h1 {
     height: 22%;
     margin-top: 50px;
   }
-  body .bodydesktop .bodydesktopsection1text h1 {
+  .bodydesktop .bodydesktopsection1text h1 {
     font-size: 2em;
     text-align: left;
   }
-  body .bodydesktop .spacer {
+  .bodydesktop .spacer {
     width: 30vh;
     height: 393px;
   }
-  body .bodydesktop .bodydesktopsection1img {
+  .bodydesktop .bodydesktopsection1img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  body .bodydesktop .image11 {
+  .bodydesktop .image11 {
     width: 100%;
     height: 100%;
   }
-  body .bodydesktop .bodydesktopsection2 {
+  .bodydesktop .bodydesktopsection2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -916,33 +918,33 @@ h1 {
             justify-content: space-between;
     margin-bottom: 205px;
   }
-  body .bodydesktop .bodydesktopsection2text {
+  .bodydesktop .bodydesktopsection2text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 22%;
     height: 22%;
   }
-  body .bodydesktop .bodydesktopsection2text h1 {
+  .bodydesktop .bodydesktopsection2text h1 {
     font-size: 2em;
     text-align: left;
   }
-  body .bodydesktop .spacer2 {
+  .bodydesktop .spacer2 {
     width: 30vh;
     height: 393px;
   }
-  body .bodydesktop .bodydesktopsection2img {
+  .bodydesktop .bodydesktopsection2img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  body .bodydesktop .image22 {
+  .bodydesktop .image22 {
     width: 100%;
     height: 100%;
   }
-  body .bodydesktop .bodydesktopsection3 {
+  .bodydesktop .bodydesktopsection3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -951,7 +953,7 @@ h1 {
             justify-content: space-between;
     margin-bottom: 205px;
   }
-  body .bodydesktop .bodydesktopsection3text {
+  .bodydesktop .bodydesktopsection3text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -959,26 +961,26 @@ h1 {
     height: 22%;
     margin-top: 50px;
   }
-  body .bodydesktop .bodydesktopsection3text h1 {
+  .bodydesktop .bodydesktopsection3text h1 {
     font-size: 2em;
     text-align: left;
   }
-  body .bodydesktop .spacer3 {
+  .bodydesktop .spacer3 {
     width: 30vh;
     height: 393px;
   }
-  body .bodydesktop .bodydesktopsection3img {
+  .bodydesktop .bodydesktopsection3img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  body .bodydesktop .image33 {
+  .bodydesktop .image33 {
     width: 100%;
     height: 100%;
   }
-  body .bodydesktop .bodydesktopsection4 {
+  .bodydesktop .bodydesktopsection4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -987,36 +989,36 @@ h1 {
             justify-content: space-between;
     margin-bottom: 100px;
   }
-  body .bodydesktop .bodydesktopsection4text {
+  .bodydesktop .bodydesktopsection4text {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 22%;
     height: 22%;
   }
-  body .bodydesktop .bodydesktopsection4text h1 {
+  .bodydesktop .bodydesktopsection4text h1 {
     font-size: 2em;
     text-align: left;
   }
-  body .bodydesktop .spacer4 {
+  .bodydesktop .spacer4 {
     width: 30vh;
     height: 393px;
   }
-  body .bodydesktop .bodydesktopsection4img {
+  .bodydesktop .bodydesktopsection4img {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
     width: 694px;
     height: 393px;
   }
-  body .bodydesktop .image44 {
+  .bodydesktop .image44 {
     width: 100%;
     height: 100%;
   }
-  body .seafloortext {
+  .seafloortext {
     display: none;
   }
-  body .foodtext {
+  .foodtext {
     color: #F1DAC4;
     text-align: center;
     font-size: 39px;
